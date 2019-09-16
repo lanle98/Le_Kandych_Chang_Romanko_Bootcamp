@@ -1,0 +1,29 @@
+footer {
+  h3,
+  a,
+  li {
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    margin: 0;
+  }
+  p {
+    font-size: 15px;
+  }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .subnav {
+    width: 180px;
+    margin: 20px;
+  }
+
+  li {
+    margin: 10px 0;
+    font-weight: 100;
+  }
+}
