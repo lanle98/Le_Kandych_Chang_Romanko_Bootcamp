@@ -1,0 +1,30 @@
+@import "modules/navbar";
+
+.hidden {
+  display: none;
+}
+header {
+  background: green;
+}
+
+.promo {
+  margin: 20px;
+
+  h3 {
+    font-size: 40px;
+    margin: 60px 0 20px 0;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .workWithUs {
+    width: 100px;
+    padding: 10px 20px;
+    border: solid;
+    border-color: white;
+    border-radius: 10px;
+  }
+}
