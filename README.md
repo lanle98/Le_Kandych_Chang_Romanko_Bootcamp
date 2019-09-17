@@ -17,7 +17,7 @@ Visual Studio Code
 ## Authors
 
 * **Lan Le** - *Developer* 
-* **Vira Romanko** - *Project Meneger* 
+* **Vira Romanko** - *Project Manager* 
 * **Julia Kandych** - *Designer* 
 * **Kayla Chang** - *Motion Designer* 
 
