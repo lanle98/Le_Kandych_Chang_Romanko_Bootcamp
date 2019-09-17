@@ -2,11 +2,12 @@
   display: flex;
   background: blue;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 15vw;
+  height: 15vw;
   background: black;
   margin: 20px;
 }
