@@ -1,1 +1,27 @@
-# Le_Kandych_Chang_Romanko_Bootcamp
+# Digital Lights
+## We are sparking community
+
+
+
+
+## Build with
+* **HTML5**
+* **SASS/CSS3**
+* **JavaScript**
+
+
+
+## Workspace
+Visual Studio Code
+
+## Authors
+
+* **Lan Le** - *Developer* 
+* **Vira Romanko** - *Project Manager* 
+* **Julia Kandych** - *Designer* 
+* **Kayla Chang** - *Motion Designer* 
+
+
+
+## Acknowledgment/reference sources
+
