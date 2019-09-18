@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="125.694" height="93.921" viewBox="0 0 125.694 93.921">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-17.061" y1="-184.378" x2="1.688" y2="13.003" gradientUnits="objectBoundingBox">
+      <stop offset="0.038" stop-color="#883bff"/>
+      <stop offset="0.501" stop-color="aqua"/>
+      <stop offset="0.965" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-16.861" y1="-182.278" x2="1.887" y2="15.103" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="-16.326" y1="-176.643" x2="2.422" y2="20.735" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-16.567" y1="-179.178" x2="2.182" y2="18.203" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="-5.042" y1="-57.85" x2="1.523" y2="11.275" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="-3.444" y1="-41.025" x2="1.351" y2="9.455" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="-3.269" y1="-39.179" x2="1.526" y2="11.301" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-8" x1="-3.21" y1="-38.553" x2="1.585" y2="11.927" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-9" x1="-3.158" y1="-38.006" x2="1.637" y2="12.474" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-10" x1="-1.036" y1="-15.674" x2="1.28" y2="8.709" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-11" x1="-0.342" y1="-8.365" x2="1.035" y2="6.137" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-12" x1="-0.183" y1="-6.692" x2="1.194" y2="7.81" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-13" x1="-0.153" y1="-6.373" x2="1.225" y2="8.129" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-14" x1="0.008" y1="-4.684" x2="1.385" y2="9.818" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-15" x1="0.173" y1="-2.943" x2="1.55" y2="11.559" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-16" x1="0.25" y1="-2.131" x2="1.628" y2="12.371" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-17" x1="-17.061" y1="-184.378" x2="1.688" y2="13.003" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-19" x1="-17.061" y1="-184.378" x2="1.688" y2="13.003" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group_39" data-name="Group 39" transform="translate(-231.894 -195.593)">
+    <g id="Group_38" data-name="Group 38" transform="translate(0 2)">
+      <text id="Digital" transform="translate(287.588 231.934)" fill="#fff" font-size="19.829" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Digital</tspan></text>
+      <text id="Lights" transform="translate(287.588 254.74)" fill="#fff" font-size="19.829" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Lights</tspan></text>
+    </g>
+    <rect id="Rectangle_36" data-name="Rectangle 36" width="0.645" height="0.645" transform="translate(256.803 285.383)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_37" data-name="Rectangle 37" width="0.645" height="0.645" transform="translate(265.009 281.429)" fill="url(#linear-gradient-2)"/>
+    <rect id="Rectangle_38" data-name="Rectangle 38" width="1.436" height="1.436" transform="translate(264.291 274.759)" fill="url(#linear-gradient-3)"/>
+    <rect id="Rectangle_39" data-name="Rectangle 39" width="0.645" height="0.645" transform="translate(270.227 277.519)" fill="url(#linear-gradient-4)"/>
+    <rect id="Rectangle_40" data-name="Rectangle 40" width="1.84" height="1.84" transform="translate(257.447 272.879)" fill="url(#linear-gradient-5)"/>
+    <rect id="Rectangle_41" data-name="Rectangle 41" width="2.52" height="2.52" transform="translate(247.927 269.439)" fill="url(#linear-gradient-6)"/>
+    <rect id="Rectangle_42" data-name="Rectangle 42" width="2.52" height="2.52" transform="translate(240.363 264.853)" fill="url(#linear-gradient-7)"/>
+    <rect id="Rectangle_43" data-name="Rectangle 43" width="2.52" height="2.52" transform="translate(252.722 260.704)" fill="url(#linear-gradient-8)"/>
+    <rect id="Rectangle_44" data-name="Rectangle 44" width="2.52" height="2.52" transform="translate(263.749 258.829)" fill="url(#linear-gradient-9)"/>
+    <rect id="Rectangle_45" data-name="Rectangle 45" width="5.217" height="5.217" transform="translate(271.186 251.667)" fill="url(#linear-gradient-10)"/>
+    <rect id="Rectangle_46" data-name="Rectangle 46" width="7.569" height="7.569" transform="translate(254.583 244.337)" fill="url(#linear-gradient-11)"/>
+    <rect id="Rectangle_47" data-name="Rectangle 47" width="7.623" height="7.623" transform="translate(239.873 234.215)" fill="url(#linear-gradient-12)"/>
+    <rect id="Rectangle_48" data-name="Rectangle 48" width="7.623" height="7.623" transform="translate(254.424 224.996)" fill="url(#linear-gradient-13)"/>
+    <rect id="Rectangle_49" data-name="Rectangle 49" width="7.623" height="7.623" transform="translate(267.221 215.337)" fill="url(#linear-gradient-14)"/>
+    <rect id="Rectangle_50" data-name="Rectangle 50" width="8.772" height="8.772" transform="translate(250.197 205.064)" fill="url(#linear-gradient-15)"/>
+    <rect id="Rectangle_51" data-name="Rectangle 51" width="8.772" height="8.772" transform="translate(231.894 195.593)" fill="url(#linear-gradient-16)"/>
+    <rect id="Rectangle_52" data-name="Rectangle 52" width="0.645" height="0.645" transform="translate(249.187 288.869)" fill="url(#linear-gradient-17)"/>
+    <rect id="Rectangle_53" data-name="Rectangle 53" width="0.645" height="0.645" transform="translate(252.997 287.086)" fill="url(#linear-gradient-17)"/>
+    <rect id="Rectangle_54" data-name="Rectangle 54" width="0.645" height="0.645" transform="translate(260.709 283.417)" fill="url(#linear-gradient-19)"/>
+  </g>
+</svg>
