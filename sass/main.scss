@@ -24,6 +24,19 @@ header {
   background: green;
   height: 100vh;
 }
+.logo {
+  width: 15vw;
+  height: 15vw;
+  background: black;
+  margin: 20px 0;
+}
+
+.button {
+  padding: 10px 30px;
+  border: solid;
+  border-color: white;
+  border-radius: 10px;
+}
 
 .hero {
   margin: 20px;
@@ -33,7 +46,7 @@ header {
   justify-content: space-around;
 
   h3 {
-    font-size: 12vw;
+    font-size: 10vw;
     margin: 60px 0 20px 0;
     text-align: left;
   }
@@ -43,12 +56,6 @@ header {
     margin: 0;
     margin-bottom: 20px;
     text-align: left;
-  }
-  .button {
-    padding: 10px 30px;
-    border: solid;
-    border-color: white;
-    border-radius: 10px;
   }
 
   .workWithUs {
@@ -124,7 +131,7 @@ header {
 
   .seeMore {
     text-align: center;
-    width: 30%;
+    width: 30vw;
     margin: auto;
     margin-top: 20px;
   }
@@ -152,7 +159,7 @@ header {
   }
 
   .send {
-    width: 30%;
+    width: 30vw;
     margin: auto;
   }
 }
@@ -160,6 +167,18 @@ header {
 @import "modules/footer";
 
 @media screen and (min-width: 768px) {
+  .hero {
+    justify-content: center;
+
+    h3 {
+      margin: 0;
+    }
+  }
+  .portfolio {
+    .seeMore {
+      width: 20vw;
+    }
+  }
   .ourTeam {
     .member {
       .potrait {
@@ -168,29 +187,22 @@ header {
       }
     }
   }
+
+  .contact {
+    .send {
+      width: 20vw;
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  .navigationBar {
-    padding: 0 20px;
-    align-items: center;
+  header {
+    padding: 0 80px;
+  }
 
-    .logo {
-      width: 10vw;
-      height: 10vw;
-    }
-    .desktop {
-      display: block;
-
-      li {
-        font-size: 20px;
-        margin: 0 40px;
-      }
-    }
-
-    .hamburgerMenu {
-      display: none;
-    }
+  .logo {
+    width: 10vw;
+    height: 10vw;
   }
 
   .hero {
@@ -204,6 +216,8 @@ header {
       width: 15vw;
       padding: 20px;
       font-size: 2vw;
+      position: relative;
+      bottom: 60px;
     }
 
     .scroll {
@@ -211,18 +225,33 @@ header {
       position: absolute;
       bottom: 0;
       margin: 20px;
+      font-size: 20px;
     }
 
     .social {
       position: absolute;
-      right: 0;
+      right: 80px;
       bottom: 0;
     }
   }
 
   .aboutUs {
+    .wrapper {
+      display: flex;
+      align-items: center;
+
+      .description {
+        width: 40%;
+        padding: 20px;
+
+        h4 {
+          font-size: 30px;
+        }
+      }
+    }
     .video {
-      height: $rec_height;
+      width: 60%;
+      height: 400px;
     }
   }
 
