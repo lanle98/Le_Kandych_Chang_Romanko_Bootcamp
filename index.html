@@ -65,7 +65,17 @@
             quidem nemo aut corrupti ipsam!
           </p>
         </div>
-        <div class="video"></div>
+        <div class="video">
+          <video src="video/test_video.mp4" muted></video>
+          <!-- video controls -->
+          <div id="videoControls">
+                <button type="button" id="playPause">Play</button>
+                <input type="range" id="timeBar" value="0">
+                <button type="button" id="mute">Unmute</button>
+                <input type="range" id="volumeBar" min="0" max="1" step="0.1" value="0">
+                <button type="button" id="fullScreen">Full-Screen</button>
+          </div>
+        </div>
       </section>
 
       <section class="ourTeam">
@@ -181,5 +191,8 @@
       </div>
       <p>Copyright (c) 2019 Digital Lights</p>
     </footer>
+
+    <script src="js/bootcamp.js"></script>
+
   </body>
 </html>
