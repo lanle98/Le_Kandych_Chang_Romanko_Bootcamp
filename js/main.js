@@ -2,17 +2,19 @@ import Team from "./modules/member_object.js";
 
 (() => {
   const members = document.querySelector(".members");
-  const bio_wrapper = document.querySelector(".bio-wrapper").children;
   const bio = document.querySelector(".bio-wrapper");
   const close_popup = document.querySelector(".bio-wrapper span");
+  const avatar = document.querySelector(".bio-wrapper img");
+  const info = document.querySelector(".info").children;
 
   function showProfData() {
     bio.style.display = "flex";
     const currentProf = this.className.slice(7);
-    console.log(currentProf);
 
-    bio_wrapper[1].src = `images/${Team[currentProf].popup}`;
-    bio_wrapper[3].textContent = `${Team[currentProf].bio}`;
+    console.log(currentProf);
+    avatar.src = `images/${Team[currentProf].popup}`;
+    info[0].textContent = `${Team[currentProf].name}`;
+    info[1].textContent = `${Team[currentProf].bio}`;
   }
 
   function closePopup() {

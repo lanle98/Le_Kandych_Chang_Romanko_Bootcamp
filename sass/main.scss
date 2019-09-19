@@ -100,24 +100,30 @@ header {
 .bio-wrapper {
   display: none;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 500px;
-  height: 50vh;
-  max-width: 800px;
+  width: 90vw;
+  height: 600px;
   position: absolute;
   z-index: 1;
+  background: black;
 
   img {
     width: 100%;
-    height: 800px;
-    position: relative;
+    object-fit: cover;
   }
 
-  p {
+  .info {
     position: absolute;
     bottom: 0;
+
+    h4 {
+      font-size: 8vw;
+    }
+
+    p {
+      font-size: 15px;
+    }
   }
+
   span {
     position: absolute;
     right: 0;
@@ -280,7 +286,13 @@ header {
     }
   }
 
-  .contact {
+  .bio-wrapper {
+    width: 60vw;
+    height: 100%;
+
+    img {
+      height: 100%;
+    }
   }
 }
 
@@ -360,6 +372,15 @@ header {
     .project {
       width: 50%;
       height: 30vw;
+    }
+  }
+
+  .bio-wrapper {
+    width: 60vw;
+    height: 80vw;
+
+    .info p {
+      font-size: 20px;
     }
   }
 }
