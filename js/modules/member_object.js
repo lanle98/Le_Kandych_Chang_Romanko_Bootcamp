@@ -41,10 +41,11 @@ const Team = {
     name: "Vira",
     bio:
       "Vira Romanko is a junior front-end developer with design passion. She believes that great design is practical and oriented on the end-user. As a project manager of Digital Lights, she is responsible for breaking down big tasks into small ones and ensure that our customers are satisfied with the end deliverables. The end result motives her as much as the process of creating and working in the awesome team. If you have any questions or concerns please feel free to contact her" ,
-    linkedin: "",
-    facebook: "",
-    twitter: "",
-    instagram: ""
+    //sorry dont have linedIn account but i should ha ha
+    linkedin: "https://www.linkedin.com",
+    facebook: "https://www.facebook.com/profile.php?id=100007931835354",
+    twitter: "https://twitter.com/vira_romanko99",
+    instagram: "https://www.instagram.com/vira.romanko/"
   }
 };
 
