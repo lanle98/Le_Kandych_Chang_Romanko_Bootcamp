@@ -29,10 +29,10 @@ const Team = {
     name: "Yullia Kandych",
     bio:
       "Yuliia Kandych is a web designer, graphics whiz, and UI/UX expert. She excels at bringing designs to life, loves to paint. Yuliia has a passion for creating solutions that are both beautiful and meaningful. She finds inspiration in traveling and meeting new people. Yuliia is guaranteed to take your project from conception to perfection. Feel free to contact her using the links below.",
-    linkedin: "",
-    facebook: "",
-    twitter: "",
-    instagram: ""
+    linkedin: "https://www.linkedin.com/in/yuliiakandych/",
+    facebook: "https://www.facebook.com/julia.kandych",
+    twitter: "https://twitter.com/",
+    instagram: "https://www.instagram.com/"
   },
 
   Vira: {
