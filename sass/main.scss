@@ -365,6 +365,8 @@ header {
       .potrait {
         width: $square_size_desktop;
         height: $square_size_desktop;
+        border: solid 1px;
+        border-radius: 20px;
       }
     }
   }

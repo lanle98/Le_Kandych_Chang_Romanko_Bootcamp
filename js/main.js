@@ -12,7 +12,7 @@ import Team from "./modules/member_object.js";
     const currentProf = this.className.slice(7);
 
     console.log(currentProf);
-    avatar.src = `images/${Team[currentProf].popup}`;
+    avatar.src = `images/popup_avatar/${Team[currentProf].popup}`;
     info[0].textContent = `${Team[currentProf].name}`;
     info[1].textContent = `${Team[currentProf].bio}`;
   }
@@ -29,7 +29,7 @@ import Team from "./modules/member_object.js";
 
     member.className = `member ${prof}`;
     members.appendChild(member);
-    member.innerHTML = `<img class="potrait" src=images/${Team[prof].avatar}.jpg>`;
+    member.innerHTML = `<img class="potrait" src=images/avatar/${Team[prof].avatar}.jpg>`;
     member_name.className = "member-name";
     member.appendChild(member_name);
     member_name.innerHTML = `<h4>${Team[prof].name}</h4>`;
