@@ -105,14 +105,14 @@ header {
   .member {
     margin: 40px 20px;
     position: relative;
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 
     .potrait {
-      height: $square_size_mobile;
-      width: $square_size_mobile;
+      height: 50vw;
+      width: 80vw;
       object-fit: cover;
       border: solid 1px;
       border-radius: 20px;
@@ -121,20 +121,13 @@ header {
     p {
       text-align: center;
     }
-
-    .member-name {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      display: none;
-    }
   }
 
   .member-social {
     margin: 20px 0px;
     display: flex;
     justify-content: space-around;
-    position: absolute;
+    // position: absolute;
     bottom: 0;
     width: 100%;
   }
@@ -291,8 +284,8 @@ header {
   .ourTeam {
     .member {
       .potrait {
-        width: $square_size_tablet;
-        height: $square_size_tablet;
+        width: 40vw;
+        height: 30vw;
       }
     }
   }
@@ -374,10 +367,6 @@ header {
 
   .ourTeam {
     .member {
-      .potrait {
-        width: $square_size_desktop;
-        height: $square_size_desktop;
-      }
     }
   }
   .portfolio {

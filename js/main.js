@@ -15,6 +15,12 @@ import Team from "./modules/member_object.js";
     avatar.src = `images/popup_avatar/${Team[currentProf].popup}`;
     info[0].textContent = `${Team[currentProf].name}`;
     info[1].textContent = `${Team[currentProf].bio}`;
+
+    document.querySelector(".member-social").innerHTML =
+      `<a href='${Team[currentProf].linkedin}'><img src="images/social_media/linkedin.svg" alt="linkedin"></a>` +
+      `<a href='${Team[currentProf].twitter}'><img src="images/social_media/twitter.svg" alt="twitter"></a>` +
+      `<a href='${Team[currentProf].facebook}'><img src="images/social_media/facebook.svg" alt="facebook"></a>` +
+      `<a href='${Team[currentProf].instagram}'><img src="images/social_media/instagram.svg" alt="instagram"></a>`;
   }
 
   function closePopup() {
@@ -26,6 +32,7 @@ import Team from "./modules/member_object.js";
 
     let member = document.createElement("div");
     let member_name = document.createElement("div");
+    let member_social = document.createElement("div");
 
     member.className = `member ${prof}`;
     members.appendChild(member);
@@ -33,17 +40,16 @@ import Team from "./modules/member_object.js";
     member_name.className = "member-name";
     member.appendChild(member_name);
     member_name.innerHTML = `<h4>${Team[prof].name}</h4>`;
-    member.innerHTML += "<div class=member-social>";
+    member.appendChild(member_social);
+    member_social.className = "member-social";
 
-    let member_social = document.querySelectorAll(".member-social");
-    member_social.forEach(
-      e =>
-        (e.innerHTML =
-          `<a href="https://www.facebook.com/"><img src="images/social_media/linkedin.svg" alt="linkedin"></a>` +
-          `<a href="https://www.facebook.com/"><img src="images/social_media/twitter.svg" alt="twitter"></a>` +
-          `<a href="https://www.facebook.com/"><img src="images/social_media/facebook.svg" alt="facebook"></a>` +
-          `<a href="https://www.facebook.com/"><img src="images/social_media/instagram.svg" alt="instagram"></a>`)
-    );
+    console.log(member_social);
+
+    member_social.innerHTML =
+      `<a href='${Team[prof].linkedin}'><img src="images/social_media/linkedin.svg" alt="linkedin"></a>` +
+      `<a href='${Team[prof].twitter}'><img src="images/social_media/twitter.svg" alt="twitter"></a>` +
+      `<a href='${Team[prof].facebook}'><img src="images/social_media/facebook.svg" alt="facebook"></a>` +
+      `<a href='${Team[prof].instagram}'><img src="images/social_media/instagram.svg" alt="instagram"></a>`;
 
     member.addEventListener("click", showProfData);
   }
