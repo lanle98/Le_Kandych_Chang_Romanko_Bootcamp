@@ -4,21 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>BootCamp</title>
   </head>
   <body>
+    <h1 class="hidden">Bootcamp</h1>
     <header>
       <h2 class="hidden">Header</h2>
       <div class="navigationBar">
-        <div class="logo"></div>
+        <h3 class="hidden">Navigation Bar</h3>
+        <div class="logo">
+          <img src="images/Logo.svg" alt="logo">
+        </div>
         <div class="navBar desktop top">
           <ul>
-            <li>Home</li>
-            <li>Portfolio</li>
-            <li>Contact Us</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact Us</a></li>
           </ul>
         </div>
         <div class="hamburgerMenu">
@@ -28,9 +32,9 @@
         </div>
         <div class="navBar mobile">
           <ul>
-            <li><a>Home</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Contact Us</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -43,19 +47,21 @@
         </div>
 
         <div class="button workWithUs"><a href="##">Work with us</a></div>
+        <div class="scroll">Scroll  ↓</div>
         <div class="social">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <a href="https://www.facebook.com/"><img src="images/social_media/linkedin.svg" alt="linkedin"></a>
+          <a href="https://www.facebook.com/"><img src="images/social_media/twitter.svg" alt="twitter"></a>
+          <a href="https://www.facebook.com/"><img src="images/social_media/facebook.svg" alt="facebook"></a>
+          <a href="https://www.facebook.com/"><img src="images/social_media/instagram.svg" alt="instagram"></a>
         </div>
       </div>
     </header>
 
-    <div class="container">
+    <section class="container">
       <h2 class="hidden">Container</h2>
       <section class="aboutUs">
         <h3>About Us</h3>
+        <div class="wrapper">
         <div class="description">
           <h4>Welcome To Our World</h4>
           <p>
@@ -76,61 +82,39 @@
                 <button type="button" id="fullScreen">Full-Screen</button>
           </div>
         </div>
+        </div>
       </section>
 
       <section class="ourTeam">
         <h3>Our Team</h3>
-        <div class="member">
-          <div class="potrait"></div>
-          <p>Kayla Chang</p>
-          <div class="social">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-        <div class="member">
-          <div class="potrait"></div>
-          <p>Kayla Chang</p>
-          <div class="social">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-        <div class="member">
-          <div class="potrait"></div>
-          <p>Kayla Chang</p>
-          <div class="social">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-        <div class="member">
-          <div class="potrait"></div>
-          <p>Kayla Chang</p>
-          <div class="social">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
+        <div class="members">
+  
+            <div class="bio-wrapper">
+              <span>&times</span>
+              <img src="" alt="avatar">
+              <div class="info">
+                <h4></h4>
+                <p></p>
+              </div>
+            </div>
+        
+        
+      </div>
       </section>
+    
 
       <section class="portfolio">
         <h3>Portfolio</h3>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
+        <div class="projects">
+          <div class="project"></div>
+          <div class="project"></div>
+          <div class="project"></div>
+          <div class="project"></div>
+        </div>
         <div class="seeMore button"><a href=""></a>See more</a></div>
       </section>
 
+      
       <section class="contact">
         <h3>Contact Us</h3>
         <div class="contactInfo">
@@ -151,9 +135,13 @@
           <div class="send button"><a href="##">Send</a></div>
         </div>
       </section>
-    </div>
+    </section>
+
     <footer>
-      <div class="logo"></div>
+      <h2 class="hidden">Footer</h2>
+      <div class="logo">
+          <img src="images/Logo.svg" alt="logo">
+        </div>
       <div class="nav">
         <div class="about subnav">
           <h3>About</h3>
@@ -188,11 +176,28 @@
                   <li><a>Cookie Policy</a></li>
                 </ul>
               </div>
-      </div>
+              </div>
+      
       <p>Copyright (c) 2019 Digital Lights</p>
     </footer>
+  
 
-    <script src="js/bootcamp.js"></script>
+
+    <section class="submission">
+      <div class="thankYou"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In voluptatem totam molestiae a unde? </p>
+      <div class="button">Back to page</div>
+      <h4>Follow Us</h4>
+      <div class="social">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+    </section>
+
+    <script type="module" src="js/main.js"></script>
+    <script src="js/video_controls.js"></script>
 
   </body>
 </html>
