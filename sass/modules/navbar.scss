@@ -1,14 +1,8 @@
 .navigationBar {
   display: flex;
-  background: blue;
   justify-content: space-between;
-}
-
-.logo {
-  width: 40px;
-  height: 40px;
-  background: black;
-  margin: 20px;
+  align-items: center;
+  padding: 20px;
 }
 
 .navBar {
@@ -23,7 +17,6 @@
 }
 
 .hamburgerMenu {
-  margin: 20px;
   height: 40px;
   display: flex;
   flex-direction: column;
@@ -32,10 +25,31 @@
   div {
     width: 40px;
     height: 5px;
-    background: red;
+    background: white;
+    border-radius: 20px;
   }
 }
 
 .navBar {
   display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .navigationBar {
+    padding: 0 20px;
+    align-items: center;
+
+    .desktop {
+      display: block;
+
+      li {
+        font-size: 20px;
+        margin: 0 40px;
+      }
+    }
+
+    .hamburgerMenu {
+      display: none;
+    }
+  }
 }

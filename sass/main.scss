@@ -1,13 +1,18 @@
 @import "modules/navbar";
 @import "vars";
 
+body {
+  background: url(../images/bckgrd_Mobile.jpg);
+  background-size: cover;
+}
+
 .hidden {
   display: none;
 }
 
 h3 {
   font-size: $h3_fontSize;
-  margin: 60px 0 20px 0;
+  padding: 60px 0 20px 0;
 }
 
 p {
@@ -17,12 +22,25 @@ p {
 }
 
 body {
-  background: #464646;
 }
 
 header {
-  background: green;
   height: 100vh;
+}
+.logo {
+  width: 15vw;
+  height: 15vw;
+  margin: 20px 0;
+}
+
+.button {
+  padding: 10px 30px;
+  border: solid;
+  border-color: white;
+  border-radius: 10px;
+  width: 30vw;
+  text-align: center;
+  margin: auto;
 }
 
 .hero {
@@ -33,79 +51,166 @@ header {
   justify-content: space-around;
 
   h3 {
-    font-size: 40px;
+    font-size: 10vw;
     margin: 60px 0 20px 0;
     text-align: left;
   }
 
   p {
-    font-size: 20px;
+    font-size: 4vw;
     margin: 0;
     margin-bottom: 20px;
     text-align: left;
   }
-}
 
-.button {
-  padding: 10px 30px;
-  border: solid;
-  border-color: white;
-  border-radius: 10px;
-}
+  .workWithUs {
+    width: 100px;
+    margin: 0;
+  }
 
-.workWithUs {
-  width: 100px;
+  .scroll {
+    display: none;
+    position: absolute;
+  }
 }
 
 .social {
   margin: 20px 0;
   display: flex;
 
-  div {
-    background: black;
+  img {
     width: 40px;
     height: 40px;
     margin-right: 20px;
+    opacity: 0.8;
   }
 }
 
 .video {
   width: 100%;
-  height: 200px;
   background: #232323;
+
+  video {
+    width: 100%;
+  }
 }
 
-.member {
-  background: red;
-  height: 300px;
-  margin: 40px;
+@import "modules/video_controls.scss";
 
-  .potrait {
+.bio-wrapper {
+  display: none;
+  flex-direction: column;
+  width: 90vw;
+  height: 600px;
+  position: absolute;
+  z-index: 1;
+  background: black;
+
+  img {
     width: 100%;
-    height: 60%;
-    background: blue;
+    object-fit: cover;
   }
 
-  p {
-    text-align: center;
+  .info {
+    position: absolute;
+    bottom: 0;
+
+    h4 {
+      font-size: 8vw;
+    }
+
+    p {
+      font-size: 15px;
+    }
   }
 
-  .social div {
-    margin: 0 auto;
+  span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 40px;
+    z-index: 1;
+  }
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .member {
+    margin: 40px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .potrait {
+      height: $square_size_mobile;
+      width: $square_size_mobile;
+      object-fit: cover;
+      background: blue;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .member-name {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      display: none;
+    }
+
+    .member-social {
+      margin: 20px 0px;
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .member-social img {
+      margin: 0 auto;
+      width: 40px;
+      height: 40px;
+      opacity: 0.8;
+    }
+
+    .member-social img:hover {
+      opacity: 1;
+      transition: 0.5s;
+    }
+  }
+
+  .member:hover .potrait {
+    opacity: 0.5;
+  }
+
+  .member:hover .member-name {
+    display: block;
   }
 }
 
 .portfolio {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .project {
-    height: 200px;
+    height: 50vw;
+    width: 100%;
     background: blue;
-    border-bottom: solid;
+  }
+
+  .project:nth-child(1) {
+    background: green;
   }
 
   .seeMore {
-    text-align: center;
-    width: 30%;
-    margin: auto;
     margin-top: 20px;
   }
 }
@@ -130,11 +235,154 @@ header {
   textarea {
     height: 200px;
   }
+}
 
-  .send {
-    width: 30%;
-    margin: auto;
+.submission {
+  display: none;
+  background: blue;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+
+  .thankYou {
+    background: black;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+  }
+
+  .social {
+    justify-content: center;
   }
 }
 
 @import "modules/footer";
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url(../images/bckgrd_Tablet.jpg);
+    background-size: cover;
+  }
+
+  .hero {
+    justify-content: center;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .button {
+    width: 20vw;
+  }
+  .portfolio {
+  }
+  .ourTeam {
+    .member {
+      .potrait {
+        width: $square_size_tablet;
+        height: $square_size_tablet;
+      }
+    }
+  }
+
+  .bio-wrapper {
+    width: 60vw;
+    height: 100%;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: url(../images/background.jpg);
+    background-size: cover;
+  }
+
+  header {
+    padding: 0 80px;
+  }
+
+  .logo {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .hero {
+    justify-content: space-evenly;
+
+    p {
+      font-size: 3vw;
+    }
+
+    .workWithUs {
+      width: 15vw;
+      padding: 20px;
+      font-size: 2vw;
+      position: relative;
+      bottom: 60px;
+    }
+
+    .scroll {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      margin: 20px;
+      font-size: 20px;
+    }
+
+    .social {
+      position: absolute;
+      right: 80px;
+      bottom: 0;
+    }
+  }
+
+  .aboutUs {
+    .wrapper {
+      display: flex;
+      align-items: center;
+
+      .description {
+        width: 40%;
+        padding: 20px;
+
+        h4 {
+          font-size: 30px;
+        }
+      }
+    }
+    .video {
+      width: 50%;
+    }
+  }
+
+  .ourTeam {
+    .member {
+      .potrait {
+        width: $square_size_desktop;
+        height: $square_size_desktop;
+        border: solid 1px;
+        border-radius: 20px;
+      }
+    }
+  }
+  .portfolio {
+    .project {
+      width: 50%;
+      height: 30vw;
+    }
+  }
+
+  .bio-wrapper {
+    width: 60vw;
+    height: 80vw;
+
+    .info p {
+      font-size: 20px;
+    }
+  }
+}
