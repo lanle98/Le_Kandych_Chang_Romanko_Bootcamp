@@ -7,7 +7,6 @@
     fullScreenButton = document.querySelector("#fullScreen"),
     timeBar = document.querySelector("#timeBar"),
     volumeBar = document.querySelector("#volumeBar");
-  volumeBar.style.display = "none";
 
   function loadVideo() {
     video.src = `video/test_video.mp4`;
@@ -30,12 +29,10 @@
       video.muted = true; // Mute the video
       volumeBar.value = 0; // Change the volume bar
       muteButton.innerHTML = "Unmute"; // Change the mute button
-      volumeBar.style.display = "none";
     } else {
       video.muted = false; // Unmute the video
       volumeBar.value = video.volume; // Change the volume bar
-      muteButton.innerHTML = "Mute";
-      volumeBar.style.display = "flex"; // Change the mute button
+      muteButton.innerHTML = "Mute"; // Change the mute button
     }
   }
 
@@ -56,7 +53,14 @@
   }
 
   function volumeChange() {
-    video.volume = volumeBar.value; // Update video volume
+    video.muted = false; //unmute video
+    video.volume = volumeBar.value; //change volume
+    muteButton.innerHTML = "Mute"; //change mute button
+
+    if (volumeBar.value == 0) {
+      muteButton.innerHTML = "Unmute"; //change mute button if value = 0
+    }
+    // Update video volume
   }
 
   function fullScreen() {

@@ -1,13 +1,18 @@
 @import "modules/navbar";
 @import "vars";
 
+body {
+  background: url(../images/bckgrd_Mobile.jpg);
+  background-size: cover;
+}
+
 .hidden {
   display: none;
 }
 
 h3 {
   font-size: $h3_fontSize;
-  margin: 60px 0 20px 0;
+  padding: 60px 0 20px 0;
 }
 
 p {
@@ -17,17 +22,14 @@ p {
 }
 
 body {
-  background: #464646;
 }
 
 header {
-  background: green;
   height: 100vh;
 }
 .logo {
   width: 15vw;
   height: 15vw;
-  background: black;
   margin: 20px 0;
 }
 
@@ -76,11 +78,11 @@ header {
   margin: 20px 0;
   display: flex;
 
-  div {
-    background: black;
+  img {
     width: 40px;
     height: 40px;
     margin-right: 20px;
+    opacity: 0.8;
   }
 }
 
@@ -90,11 +92,40 @@ header {
 
   video {
     width: 100%;
-    height: 100%;
   }
 }
 
 @import "modules/video_controls.scss";
+
+.bio-wrapper {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 50vh;
+  max-width: 800px;
+  position: absolute;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    height: 800px;
+    position: relative;
+  }
+
+  p {
+    position: absolute;
+    bottom: 0;
+  }
+  span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 40px;
+    z-index: 1;
+  }
+}
 
 .members {
   display: flex;
@@ -102,12 +133,16 @@ header {
   justify-content: center;
 
   .member {
-    background: red;
     margin: 40px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .potrait {
       height: $square_size_mobile;
       width: $square_size_mobile;
+      object-fit: cover;
       background: blue;
     }
 
@@ -115,12 +150,41 @@ header {
       text-align: center;
     }
 
-    .social div {
+    .member-name {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      display: none;
+    }
+
+    .member-social {
+      margin: 20px 0px;
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .member-social img {
       margin: 0 auto;
-      background: black;
       width: 40px;
       height: 40px;
+      opacity: 0.8;
     }
+
+    .member-social img:hover {
+      opacity: 1;
+      transition: 0.5s;
+    }
+  }
+
+  .member:hover .potrait {
+    opacity: 0.5;
+  }
+
+  .member:hover .member-name {
+    display: block;
   }
 }
 
@@ -189,6 +253,11 @@ header {
 @import "modules/footer";
 
 @media screen and (min-width: 768px) {
+  body {
+    background: url(../images/bckgrd_Tablet.jpg);
+    background-size: cover;
+  }
+
   .hero {
     justify-content: center;
 
@@ -216,6 +285,11 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
+  body {
+    background: url(../images/background.jpg);
+    background-size: cover;
+  }
+
   header {
     padding: 0 80px;
   }
@@ -270,8 +344,7 @@ header {
       }
     }
     .video {
-      width: 60%;
-      height: 400px;
+      width: 50%;
     }
   }
 
