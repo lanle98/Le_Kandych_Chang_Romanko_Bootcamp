@@ -9,7 +9,7 @@
 			volumeBar 			= document.querySelector('#volumeBar');
 
 	function loadVideo() {
-		video.src = `video/test_video.mp4`;
+		video.src = `video/bootcamp_video.mp4`;
 		video.load();
 		video.pause();
 	}
