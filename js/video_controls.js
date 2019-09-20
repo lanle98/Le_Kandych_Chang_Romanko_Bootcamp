@@ -16,10 +16,10 @@
   function playPause() {
     if (video.paused == true) {
       video.play(); // Play the video
-      playButton.innerHTML = "Pause"; // Update the button text to 'Pause'
+      playButton.src = "..images/rounded-pause-button.svg";// Update the button text to 'Pause'
     } else {
       video.pause(); // Pause the video
-      playButton.innerHTML = `images/${playButton}`; // Update the button text to 'Play'
+      playButton.src = "..images/play-button.svg"; // Update the button text to 'Play'
     }
   }
 
@@ -27,11 +27,11 @@
     if (video.muted == false) {
       video.muted = true; // Mute the video
       volumeBar.value = 0; // Change the volume bar
-      muteButton.innerHTML = "Unmute"; // Change the mute button
+      muteButton.src = "..images/unmute.svg";  // Change the mute button
     } else {
       video.muted = false; // Unmute the video
       volumeBar.value = video.volume; // Change the volume bar
-      muteButton.innerHTML = "Mute"; // Change the mute button
+      muteButton.src = "..images/muted.svg"; // Change the mute button
     }
   }
 
@@ -54,10 +54,10 @@
   function volumeChange() {
     video.muted = false; //unmute video
     video.volume = volumeBar.value; //change volume
-    muteButton.innerHTML = "Mute"; //change mute button
+    muteButton.src = "..images/unmute.svg"; //change mute button
 
     if (volumeBar.value == 0) {
-      muteButton.innerHTML = "Unmute"; //change mute button if value = 0
+      muteButton.src = "..images/muted.svg";  //change mute button if value = 0
     }
     // Update video volume
   }

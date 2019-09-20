@@ -4,19 +4,26 @@
   background: purple;
   justify-content: space-between;
   flex-wrap: wrap;
-   #playPause, #fullScreen, #mute  {
-  width: 20%;
-   background-color: purple;
-   img {
-     width: 30%;
-    //  margin-left: 60px;
+    #playPause, #fullScreen, #mute  {
+    width: 20%;
+    outline: none;
+     background-color: purple;
+      img {
+      width: 30%;
+      //margin-right: 60px;
     
    }
-  }
+   
+   }
+   
+    
+  
+}
+  
 
   
     
-  }
+  
   
 
 
