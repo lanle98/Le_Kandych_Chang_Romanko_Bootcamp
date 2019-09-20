@@ -21,8 +21,7 @@ p {
   font-size: 20px;
 }
 
-body {
-}
+
 
 header {
   height: 100vh;
@@ -35,7 +34,7 @@ header {
 
 .button {
   padding: 10px 30px;
-  border: solid;
+  border: solid 1px;
   border-color: white;
   border-radius: 10px;
   width: 30vw;
@@ -50,18 +49,19 @@ header {
   flex-direction: column;
   justify-content: space-around;
 
-  h3 {
+// h3 {
+//   font-size: 5vw;
+//    margin: 60px 0 20px 0;
+//    text-align: left;
+  
+//  }
+   p {
     font-size: 10vw;
-    margin: 60px 0 20px 0;
-    text-align: left;
-  }
-
-  p {
-    font-size: 4vw;
     margin: 0;
     margin-bottom: 20px;
     text-align: left;
   }
+  
 
   .workWithUs {
     width: 100px;
@@ -236,21 +236,51 @@ header {
 }
 
 .contactForm {
+ ::placeholder
+ {
+   font-size: 18px;
+   opacity: 0.5;
+   padding: 10px 20px;
+ }
   input,
   textarea {
     margin: 20px;
-    width: 80%;
+    width: 50%;
     height: 50px;
+    border:solid 1px white;
+    border-radius: 10px;
+    background-color: transparent;
+    color:$text-color;
+    font-size: 18px;
+    padding-left: 10px;
+    outline: none;
+  
+    
   }
 
   textarea {
-    height: 200px;
+   height: 200px;
+  padding: 5px 20px;
+  border: solid 1px;
+  border-color: white;
+  border-radius: 10px;
+  width: 30vw;
+  margin: auto;
+  
   }
+  #Message
+  {
+margin-bottom: 20px;
+  }
+ input:active {
+    outline: none;
+    
+}
 }
 
 .submission {
   display: none;
-  background: blue;
+  // background: blue;
   width: 80%;
   margin: 0 auto;
   padding: 40px;
@@ -286,8 +316,7 @@ header {
   .button {
     width: 20vw;
   }
-  .portfolio {
-  }
+ 
   .ourTeam {
     .member {
       .potrait {

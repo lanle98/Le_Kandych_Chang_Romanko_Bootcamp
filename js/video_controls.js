@@ -19,7 +19,7 @@
       playButton.innerHTML = "Pause"; // Update the button text to 'Pause'
     } else {
       video.pause(); // Pause the video
-      playButton.innerHTML = "Play"; // Update the button text to 'Play'
+      playButton.innerHTML = `images/${playButton}`; // Update the button text to 'Play'
     }
   }
 

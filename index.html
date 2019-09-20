@@ -40,7 +40,7 @@
       </div>
       <div class="hero">
         <div>
-          <h3>Digital Lights</h3>
+        <!-- <h3>Digital Lights</h3>  -->
           <p>
             We create sparks in the community
           </p>
@@ -75,11 +75,11 @@
           <video src="video/bootcamp_video.mp4" muted></video>
           <!-- video controls -->
           <div id="videoControls">
-                <button type="button" id="playPause">Play</button>
+                <button type="button" id="playPause"><img src="images/play-button.svg" alt="Play svg icon"></button>
                 <input type="range" id="timeBar" value="0">
-                <button type="button" id="mute">Unmute</button>
+                <button type="button" id="mute"><img src="images/muted.svg" alt="Mute svg icon"></button>
                 <input type="range" id="volumeBar" min="0" max="1" step="0.1" value="0">
-                <button type="button" id="fullScreen">Full-Screen</button>
+                <button type="button" id="fullScreen"><img src="images/expand.svg" alt="Expended svg icon"></button>
           </div>
         </div>
         </div>
@@ -133,7 +133,10 @@
             <input placeholder="Last Name" /><br />
             <input placeholder="Phone" /><br />
             <input placeholder="Email" /><br />
-            <textarea name="comments" placeholder="Message"></textarea>
+            <div id="Message">
+              <textarea name="comments" placeholder="Message"></textarea>
+            </div>
+            
           </form>
           <div class="send button"><a href="##">Send</a></div>
         </div>
