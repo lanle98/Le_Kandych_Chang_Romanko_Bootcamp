@@ -21,6 +21,7 @@ import Team from "./modules/member_object.js";
       `<a href='${Team[currentProf].twitter}'><img src="images/social_media/twitter.svg" alt="twitter"></a>` +
       `<a href='${Team[currentProf].facebook}'><img src="images/social_media/facebook.svg" alt="facebook"></a>` +
       `<a href='${Team[currentProf].instagram}'><img src="images/social_media/instagram.svg" alt="instagram"></a>`;
+    scrollToBio();
   }
 
   function closePopup() {

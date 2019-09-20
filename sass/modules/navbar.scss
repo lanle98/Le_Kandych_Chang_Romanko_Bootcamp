@@ -5,7 +5,11 @@
   padding: 20px;
 }
 
-.navBar {
+.scrollTo {
+  cursor: pointer;
+}
+
+.desktop {
   padding: 20px;
   ul {
     display: flex;
@@ -34,7 +38,28 @@
   display: none;
 }
 
+.mobile {
+  background: black;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  flex-direction: column;
+
+  li {
+    padding: 20px;
+    font-size: 10vw;
+  }
+}
+
+.toggle {
+  display: block;
+}
+
 @media screen and (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
   .navigationBar {
     padding: 0 20px;
     align-items: center;

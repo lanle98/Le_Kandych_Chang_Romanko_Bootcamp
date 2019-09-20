@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
+  
     <title>Digital Lights</title>
   </head>
   <body>
@@ -20,9 +23,10 @@
         </div>
         <div class="navBar desktop top">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact Us</a></li>
+            
+            <li class="scrollTo">About</li>
+            <li class="scrollTo">Portfolio</li>
+            <li class="scrollTo">Contact</li>
           </ul>
         </div>
         <div class="hamburgerMenu">
@@ -30,13 +34,15 @@
           <div></div>
           <div></div>
         </div>
-        <div class="navBar mobile">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact Us</a></li>
-          </ul>
-        </div>
+        
+      </div>
+      <div class="navBar mobile">
+        <ul>
+       
+            <li class="scrollTo">About</li>
+            <li class="scrollTo">Portfolio</li>
+            <li class="scrollTo">Contact</li>
+        </ul>
       </div>
       <div class="hero">
         <div>
@@ -59,7 +65,7 @@
 
     <section class="container">
       <h2 class="hidden">Container</h2>
-      <section class="aboutUs">
+      <section class="aboutUs  About">
         <h3>About Us</h3>
         <div class="wrapper">
         <div class="description">
@@ -106,7 +112,7 @@
       </section>
     
 
-      <section class="portfolio">
+      <section class="portfolio Portfolio">
         <h3>Portfolio</h3>
         <div class="projects">
           <div class="project"></div>
@@ -118,7 +124,7 @@
       </section>
 
       
-      <section class="contact">
+      <section class="contact Contact">
         <h3>Contact Us</h3>
         <div class="contactInfo">
           <h4>Digital Lights</h4>
@@ -147,7 +153,7 @@
         </div>
       <div class="nav">
         <div class="about subnav">
-          <h3>About</h3>
+          <h3 class="scrollTo">About</h3>
           <ul>
             <li><a>Our Team</a></li>
             <li><a>Our Partners</a></li>
@@ -156,7 +162,7 @@
           </ul>
         </div>
         <div class="contact subnav">
-            <h3>Contact Us</h3>
+            <h3 class="scrollTo">Contact</h3>
             <ul>
               <li><a>Our Team</a></li>
               <li><a>Our Partners</a></li>
@@ -164,7 +170,7 @@
             </ul>
           </div>
           <div class="portfolio subnav">
-              <h3>Portfolio</h3>
+              <h3 class="scrollTo">Portfolio</h3>
               <ul>
                 <li><a>Our Team</a></li>
                 
@@ -201,6 +207,9 @@
 
     <script type="module" src="js/main.js"></script>
     <script src="js/video_controls.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/scroll.js"></script>
+
 
   </body>
 </html>
