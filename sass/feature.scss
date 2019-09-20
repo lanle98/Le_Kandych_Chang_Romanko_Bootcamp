@@ -19,7 +19,7 @@ h4 {
   margin-bottom: 40px;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: $h4_fontSize;
+  font-size: $h3_fontSize;
 }
 
 .portfolioInfoCon {
@@ -72,7 +72,7 @@ h4 {
   margin-bottom: 20px;
 }
 
-.tagsCon{
+.tagsCon {
   display: flex;
   // background: gold;
   flex-wrap: wrap;
@@ -285,30 +285,30 @@ footer {
   .wrapper-2 {
     justify-content: center;
     flex-direction: row-reverse;
-      p {
-        width: 30%;
-        margin: 20px 0;
-      }
+    p {
+      width: 30%;
+      margin: 20px 0;
+    }
   }
 
-.portfolioInfoCon {
-  margin: 50px 0px 40px 0px;
-}
+  .portfolioInfoCon {
+    margin: 50px 0px 40px 0px;
+  }
 
-.designerYuliia {
-  padding: 65px;
-  border-radius: 65px;
-  background: url("../images/feature/desktop_yuliia_photo.jpg") no-repeat center;
-  margin-bottom: 20px;
-}
+  .designerYuliia {
+    padding: 65px;
+    border-radius: 65px;
+    background: url("../images/feature/desktop_yuliia_photo.jpg") no-repeat
+      center;
+    margin-bottom: 20px;
+  }
 
-.designerLan {
-  padding: 65px;
-  border-radius: 65px;
-  background: url("../images/feature/desktop_lan_photo.jpg") no-repeat center;
-  margin-bottom: 20px;
-}
-
+  .designerLan {
+    padding: 65px;
+    border-radius: 65px;
+    background: url("../images/feature/desktop_lan_photo.jpg") no-repeat center;
+    margin-bottom: 20px;
+  }
 }
 
 // DESKTOP VERSION
