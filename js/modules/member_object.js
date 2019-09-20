@@ -16,8 +16,8 @@ const Team = {
     popup: "kayla_popup.jpg",
     name: "Kayla Chang",
     bio:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    linkedin: "https://www.facebook.com/kayla.chang.9693",
+      "Kayla Chang is currently a Motion Designer at Digital Lights. She is passionate about using movement to create visual narratives that impact others in meaningful ways. She strives to enhance the user experience and unify the brand vision with functional, accessible, and striking design. She is probably working away at a project right now, and would appreciate if you wanted to connect via the links below!",
+    linkedin: "www.linkedin.com/in/kayla-c-633229170",
     facebook: "https://www.facebook.com/kayla.chang.9693",
     twitter: "https://www.facebook.com/kayla.chang.9693",
     instagram: "https://www.facebook.com/kayla.chang.9693"

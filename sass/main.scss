@@ -381,16 +381,19 @@ header {
   width: 80%;
   margin: 0 auto;
   padding: 40px;
+    p {
+      text-align: center;
+      }
 
   .thankYou {
     // background: black;
     width: 100px;
     height: 100px;
     margin: 20px auto;
-    img {
-      display: block;
-      width: 100%;
-    }
+      img {
+        display: block;
+        width: 100%;
+      }
   }
 
   .social {
