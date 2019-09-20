@@ -12,7 +12,9 @@ DIGITAL LIGHTS is a startup digital agency that brings together small local busi
 
 ## Deployment
 
-Our website is live oh Heroku hosting service
+Our website is live oh Heroku hosting service at
+https://idpbootcamp.herokuapp.com/index.html
+
 
 
 ## Workspace (development)
