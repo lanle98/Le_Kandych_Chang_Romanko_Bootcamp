@@ -60,13 +60,14 @@ import Team from "./modules/member_object.js";
     member_social.className = "member-social";
 
     //append into DOM
-    members.appendChild(member);
-    member.appendChild(member_name);
-    member.appendChild(member_social);
 
     //adding img and names
     member.innerHTML = `<img class="potrait" src=images/avatar/${Team[prof].avatar}.jpg>`;
     member_name.innerHTML = `<h4>${Team[prof].name}</h4>`;
+
+    members.appendChild(member);
+    member.appendChild(member_name);
+    member.appendChild(member_social);
 
     console.log(member_social);
 
