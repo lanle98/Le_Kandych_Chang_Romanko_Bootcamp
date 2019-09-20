@@ -94,15 +94,18 @@ header {
 .video {
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   background: #232323;
   cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid white;
 
   video {
     width: 100%;
+    border-radius: 20px;
+    border: 1px solid white;
   }
 }
 
@@ -117,14 +120,17 @@ header {
   justify-content: center;
   align-items: center;
   background: url(../images/video_overlay_small.jpg) no-repeat center center;
+  border-radius: 20px;
+  border: 1px solid white;
 
   img {
     height: 100px;
     transition: all 0.3s ease;
+    opacity: 0.5;
   }
   &:hover {
     img {
-      opacity: 0.5;
+      opacity: 1;
     }
   }
 }
@@ -142,6 +148,7 @@ header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all 0.3s ease;
 
     .potrait {
       height: 50vw;
@@ -150,6 +157,7 @@ header {
       border: solid 1px;
       border-radius: 20px;
       opacity: 0.8;
+      transition: all 0.3s ease;
     }
 
     p {
@@ -175,10 +183,8 @@ header {
 
   .member-social img:hover {
     opacity: 1;
-    transition: 0.5s;
   }
   .member:hover .potrait {
-    transition: 0.5s;
     opacity: 1;
   }
 
@@ -255,16 +261,33 @@ header {
   .projects {
     display: flex;
     flex-wrap: wrap;
+    // max-width: 1200px;
+    margin: 0 auto;
   }
 
   .project {
-    height: 50vw;
-    width: 100%;
-    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    // width: 100%;
+    // background: blue;
+    flex: 1 1 300px;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
   }
 
+  .project:nth-child(even) {
+    background: linear-gradient(rgba(81,8,77,0.2), rgba(40,15,97,0.3)), url('../images/tablet_portfolio_pic1.jpg') no-repeat center;
+  }
   .project:nth-child(odd) {
-    background: green;
+    background: linear-gradient(rgba(81,8,77,0.2), rgba(40,15,97,0.3)), url('../images/tablet_portfolio_pic2.jpg') no-repeat center;
   }
 
   .seeMore {
@@ -285,39 +308,54 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  // align-items: center;
+  // justify-content: center;
   ::placeholder {
     font-size: 18px;
     opacity: 0.5;
     padding: 10px 20px;
   }
 
+  form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px;
+  }
+
+  .formColumn {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
   input,
   textarea {
-    margin: 20px;
-    width: 80vw;
-    height: 50px;
+    margin: 0px 40px 40px 0px;
+    // width: 80vw;
+    // height: 50px;
     border: solid 1px white;
     border-radius: 10px;
     background-color: transparent;
     color: $text-color;
     font-size: 18px;
+    flex: 1;
+    padding: 10px;
 
     outline: none;
   }
 
+  // input:last-child {
+  //   margin: 0px 40px 0px 0px;
+  // }
+
   textarea {
-    height: 200px;
-    padding: 5px 20px;
-    border: solid 1px;
-    border-color: white;
-    border-radius: 10px;
+    margin: 0px 0px 0px 0px;
+    height: 270px;
+    // padding: 5px 20px;
+    flex: 1 1 300px;
   }
-  #Message {
-    margin-bottom: 20px;
-  }
+
   input:active {
     outline: none;
   }
@@ -331,10 +369,14 @@ header {
   padding: 40px;
 
   .thankYou {
-    background: black;
+    // background: black;
     width: 100px;
     height: 100px;
     margin: 20px auto;
+      img {
+        display: block;
+        width: 100%;
+      }
   }
 
   .social {
@@ -392,6 +434,14 @@ header {
 
   .videoOverlay {
     background: url(../images/video_overlay_large.jpg) no-repeat center center;
+  }
+  .portfolio {
+    .project:nth-child(even) {
+      background: linear-gradient(rgba(81,8,77,0.2), rgba(40,15,97,0.3)), url('../images/desktop_portfolio_pic1.jpg') no-repeat center;
+    }
+    .project:nth-child(odd) {
+      background: linear-gradient(rgba(81,8,77,0.2), rgba(40,15,97,0.3)), url('../images/desktop_portfolio_pic2.jpg') no-repeat center;
+    }
   }
 }
 
@@ -461,12 +511,6 @@ header {
     .member {
     }
   }
-  .portfolio {
-    .project {
-      width: 33.33%;
-      height: 30vw;
-    }
-  }
 
   .bio-wrapper {
     width: 50vw;
@@ -477,6 +521,15 @@ header {
     }
     .info h4 {
       font-size: 5vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    .project {
+      height: 400px;
+      flex: 1 1 400px;
     }
   }
 }
