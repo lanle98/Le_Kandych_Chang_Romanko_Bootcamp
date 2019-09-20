@@ -1,5 +1,9 @@
+//sass --watch sass:css --style compressed
+
 @import "modules/navbar";
 @import "vars";
+@import "modules/video_controls.scss";
+@import "modules/footer";
 
 body {
   background: url(../images/bckgrd_Mobile.jpg);
@@ -87,15 +91,42 @@ header {
 }
 
 .video {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   background: #232323;
+  cursor: pointer;
 
   video {
     width: 100%;
   }
 }
 
-@import "modules/video_controls.scss";
+.videoOverlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/video_overlay_small.jpg) no-repeat center center;
+  
+  img {
+    height: 100px;
+    transition: all .3s ease;
+  }
+  &:hover {
+    img {
+      opacity: .5;
+    }
+  }
+}
 
 .members {
   display: flex;
@@ -182,6 +213,7 @@ header {
     }
 
     p {
+      margin: 40px;
       font-size: 15px;
     }
   }
@@ -217,7 +249,7 @@ header {
     background: blue;
   }
 
-  .project:nth-child(1) {
+  .project:nth-child(odd) {
     background: green;
   }
 
@@ -267,8 +299,7 @@ header {
   }
 }
 
-@import "modules/footer";
-
+// TABLET VERSION
 @media screen and (min-width: 768px) {
   body {
     background: url(../images/bckgrd_Tablet.jpg);
@@ -305,8 +336,13 @@ header {
       height: 100%;
     }
   }
+
+  .videoOverlay {
+    background: url(../images/video_overlay_large.jpg) no-repeat center center;
+  }
 }
 
+// DESKTOP VERSION
 @media screen and (min-width: 1024px) {
   body {
     background: url(../images/background.jpg);
@@ -370,6 +406,10 @@ header {
     .video {
       width: 50%;
     }
+
+    .videoOverlay {
+      background: url(../images/video_overlay_small.jpg) no-repeat center center;
+    }
   }
 
   .ourTeam {
@@ -382,7 +422,7 @@ header {
   }
   .portfolio {
     .project {
-      width: 50%;
+      width: 33.33%;
       height: 30vw;
     }
   }

@@ -1,1 +1,7 @@
-{"version":3,"sourceRoot":"","sources":["../../sass/modules/video_controls.scss"],"names":[],"mappings":"AAAA,eACE,aACA,WACA,gBACA,8BACA","file":"video_controls.css"}
+{
+"version": 3,
+"mappings": "AAAA,cAAe,CACb,OAAO,CAAE,IAAI,CACb,KAAK,CAAE,IAAI,CACX,UAAU,CAAE,IAAI,CAChB,eAAe,CAAE,aAAa,CAC9B,SAAS,CAAE,IAAI",
+"sources": ["../../sass/modules/video_controls.scss"],
+"names": [],
+"file": "video_controls.css"
+}
