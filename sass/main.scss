@@ -59,6 +59,7 @@ header {
   max-width: 300px;
   align-self: center;
   min-width: 100px;
+  cursor: pointer;
 }
 
 .hero {
@@ -67,26 +68,26 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-    .button {
-      align-self: flex-start;
-    }
+  .button {
+    align-self: flex-start;
+  }
   // h3 {
   //   font-size: 5vw;
   //    margin: 60px 0 20px 0;
   //    text-align: left;
 
   //  }
-    p {
-      font-size: 10vw;
-      margin: 0;
-      margin-bottom: 20px;
-      text-align: left;
-    }
+  p {
+    font-size: 10vw;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: left;
+  }
 
-    .scroll {
-      display: none;
-      position: absolute;
-    }
+  .scroll {
+    display: none;
+    position: absolute;
+  }
 }
 
 .social {
@@ -150,6 +151,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
+  align-items: center;
 
   .member {
     margin: 40px 20px;
@@ -258,7 +260,8 @@ header {
 
 .blurry_background {
   display: none;
-  width: 99vw;
+  width: 95vw;
+  margin: 0 auto;
   height: 2000px;
   position: absolute;
   background: black;
@@ -294,10 +297,12 @@ header {
   }
 
   .project:nth-child(even) {
-    background: linear-gradient(rgba(81,8,77,0.2), rgba(40,15,97,0.3)), url('../images/tablet_portfolio_pic1.jpg') no-repeat center;
+    background: linear-gradient(rgba(81, 8, 77, 0.2), rgba(40, 15, 97, 0.3)),
+      url("../images/tablet_portfolio_pic1.jpg") no-repeat center;
   }
   .project:nth-child(odd) {
-    background: linear-gradient(rgba(81,8,77,0.2), rgba(40,15,97,0.3)), url('../images/tablet_portfolio_pic2.jpg') no-repeat center;
+    background: linear-gradient(rgba(81, 8, 77, 0.2), rgba(40, 15, 97, 0.3)),
+      url("../images/tablet_portfolio_pic2.jpg") no-repeat center;
   }
 }
 
@@ -322,7 +327,7 @@ header {
     padding: 10px 20px;
   }
 
-  form{
+  form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -337,7 +342,7 @@ header {
 
   input,
   textarea {
-    margin: 0px 40px 40px 0px;
+    margin: 0px 40px 40px 40px;
     // width: 80vw;
     // height: 50px;
     border: solid 1px white;
@@ -379,10 +384,10 @@ header {
     width: 100px;
     height: 100px;
     margin: 20px auto;
-      img {
-        display: block;
-        width: 100%;
-      }
+    img {
+      display: block;
+      width: 100%;
+    }
   }
 
   .social {
@@ -443,10 +448,12 @@ header {
   }
   .portfolio {
     .project:nth-child(even) {
-      background: linear-gradient(rgba(81,8,77,0.2), rgba(40,15,97,0.3)), url('../images/desktop_portfolio_pic1.jpg') no-repeat center;
+      background: linear-gradient(rgba(81, 8, 77, 0.2), rgba(40, 15, 97, 0.3)),
+        url("../images/desktop_portfolio_pic1.jpg") no-repeat center;
     }
     .project:nth-child(odd) {
-      background: linear-gradient(rgba(81,8,77,0.2), rgba(40,15,97,0.3)), url('../images/desktop_portfolio_pic2.jpg') no-repeat center;
+      background: linear-gradient(rgba(81, 8, 77, 0.2), rgba(40, 15, 97, 0.3)),
+        url("../images/desktop_portfolio_pic2.jpg") no-repeat center;
     }
   }
 }

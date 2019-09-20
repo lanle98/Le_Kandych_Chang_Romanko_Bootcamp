@@ -14,26 +14,29 @@
     video.pause();
   }
 
+  //function to displat rewind button when the video ended
   video.onended = function() {
     console.log("ended");
-    playButton.src = `images/logo.svg`;
+    playButton.src = `images/button-rewind.svg`;
   };
 
   function playPause() {
     if (video.paused == true) {
       videoOverlay.style.display = "none";
       video.play(); // Play the video
-      playButton.src = `images/play_button.svg`; // Update the button text to 'Pause'
+      playButton.src = `images/rounded-pause-button.svg`; // Update the button text to 'Pause'
     } else {
       video.pause(); // Pause the video
-      playButton.src = `images/arrow_down.svg`; // Update the button text to 'Play'
+      playButton.src = `images/play_button.svg`; // Update the button text to 'Play'
     }
 
+    //rewind the video
     if (video.onended == true) {
       video.play();
     }
   }
 
+  //mute/unmute function
   function muteUnmute() {
     if (video.muted == false) {
       video.muted = true; // Mute the video
@@ -42,7 +45,7 @@
     } else {
       video.muted = false; // Unmute the video
       volumeBar.value = video.volume; // Change the volume bar
-      muteButton.src = `images/arrow_down.svg`; // Change the mute button
+      muteButton.src = `images/unmute.svg`; // Change the mute button
     }
   }
 
@@ -65,10 +68,10 @@
   function volumeChange() {
     video.muted = false; //unmute video
     video.volume = volumeBar.value; //change volume
-    muteButton.src = `images/muted.svg`; //change mute button
+    muteButton.src = `images/unmute.svg`; //change mute button
 
     if (volumeBar.value == 0) {
-      muteButton.src = `images/arrow_down.svg`; //change mute button if value = 0
+      muteButton.src = `images/muted.svg`; //change mute button if value = 0
     }
     // Update video volume
   }
