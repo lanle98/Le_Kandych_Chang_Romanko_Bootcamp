@@ -14,6 +14,11 @@
     video.pause();
   }
 
+  video.onended = function() {
+    console.log("ended");
+    playButton.src = `images/logo.svg`;
+  };
+
   function playPause() {
     if (video.paused == true) {
       videoOverlay.style.display = "none";
@@ -22,6 +27,10 @@
     } else {
       video.pause(); // Pause the video
       playButton.src = `images/arrow_down.svg`; // Update the button text to 'Play'
+    }
+
+    if (video.onended == true) {
+      video.play();
     }
   }
 
