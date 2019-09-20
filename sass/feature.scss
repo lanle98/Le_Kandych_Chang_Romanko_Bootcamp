@@ -15,6 +15,29 @@ body {
   display: none;
 }
 
+.btnCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  // background: gold;
+  max-height: 60px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px;
+  border-color: white;
+  border-radius: 10px;
+  padding: 20px 40px;
+  max-width: 300px;
+  align-self: center;
+  min-width: 100px;
+}
+
 h3 {
   font-size: $h3_fontSize;
   padding: 60px 0 20px 0;
@@ -87,6 +110,12 @@ p {
   }
 }
 
+.introduction {
+  p {
+    margin-bottom: 40px;
+  }
+}
+
 .challenges {
   padding: 20px 0;
   h3 {
@@ -94,7 +123,7 @@ p {
     font-size: 30px;
   }
   p {
-    margin: 40px;
+    // margin: 40px;
     font-size: 20px;
   }
 
@@ -104,16 +133,34 @@ p {
 }
 
 .wrapper-1 {
+  display: flex;
   flex-wrap: wrap;
+  // background: tomato;
+  justify-content: center;
+  margin-bottom: 40px;
 
   img {
-    width: 200px;
+    max-width: 200px;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    flex: 1;
+    margin-bottom: 30px;
   }
 }
 
 .wrapper-2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  // background: gold;
+  margin-bottom: 40px;
+
   img {
-    width: 300px;
+    height: auto;
+    align-self: center;
+    width: 400px;
+    margin-bottom: 30px;
   }
 }
 
@@ -143,7 +190,6 @@ footer {
   }
 
   .wrapper-1 {
-    display: flex;
     justify-content: center;
     img {
       width: 20%;
@@ -155,13 +201,8 @@ footer {
   }
 
   .wrapper-2 {
-    display: flex;
     justify-content: center;
     flex-direction: row-reverse;
-      img {
-        width: 50%;
-        object-fit: contain;
-      }
       p {
         width: 30%;
         margin: 20px 0;
