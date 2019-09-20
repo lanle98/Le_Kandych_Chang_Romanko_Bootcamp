@@ -23,6 +23,7 @@ Ous website is live oh Heroku hosting service
 ## Workspace (design)
 * Adobe XD
 * Adobe Photoshop/Illustrotor
+* Adobe AfterEffects
 
 ## Authors
 
