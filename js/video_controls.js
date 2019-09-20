@@ -1,12 +1,13 @@
 (() => {
   console.log("working");
 
-  const video = document.querySelector("video"),
-    playButton = document.querySelector("#playPause"),
-    muteButton = document.querySelector("#mute"),
+  const video        = document.querySelector("video"),
+    playButton       = document.querySelector("#playPause"),
+    muteButton       = document.querySelector("#mute"),
     fullScreenButton = document.querySelector("#fullScreen"),
-    timeBar = document.querySelector("#timeBar"),
-    volumeBar = document.querySelector("#volumeBar");
+    timeBar          = document.querySelector("#timeBar"),
+    volumeBar        = document.querySelector("#volumeBar"),
+    videoOverlay		 = document.querySelector('.videoOverlay');
 
   function loadVideo() {
     video.load();
@@ -15,6 +16,7 @@
 
   function playPause() {
     if (video.paused == true) {
+      videoOverlay.style.display = 'none';
       video.play(); // Play the video
       playButton.innerHTML = "Pause"; // Update the button text to 'Pause'
     } else {
@@ -78,6 +80,7 @@
   // playing and pausing the video
   playButton.addEventListener("click", playPause);
   video.addEventListener("click", playPause);
+  videoOverlay.addEventListener('click', playPause);
 
   //other video controls
   muteButton.addEventListener("click", muteUnmute);
