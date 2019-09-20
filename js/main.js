@@ -6,6 +6,27 @@ import Team from "./modules/member_object.js";
   const close_popup = document.querySelector(".bio-wrapper span");
   const avatar = document.querySelector(".bio-wrapper img");
   const info = document.querySelector(".info").children;
+  const blurry = document.querySelector(".blurry_background");
+  const send = document.querySelector(".send");
+  const back = document.querySelector(".back");
+  const submission = document.querySelector(".submission");
+
+  send.addEventListener("click", function() {
+    submission.classList.toggle("thank-you");
+    TweenLite.to(window, 0.5, {
+      scrollTo: { y: ".submission", offsetY: 20 }
+    });
+  });
+
+  back.addEventListener("click", function() {
+    submission.classList.toggle("thank-you");
+  });
+
+  function scrollToBio() {
+    TweenLite.to(window, 0.5, {
+      scrollTo: { y: `.bio-wrapper`, offsetY: 20 }
+    });
+  }
 
   function showProfData() {
     bio.style.display = "flex";
@@ -22,10 +43,13 @@ import Team from "./modules/member_object.js";
       `<a href='${Team[currentProf].facebook}'><img src="images/social_media/facebook.svg" alt="facebook"></a>` +
       `<a href='${Team[currentProf].instagram}'><img src="images/social_media/instagram.svg" alt="instagram"></a>`;
     scrollToBio();
+
+    blurry.style.display = "block";
   }
 
   function closePopup() {
     bio.style.display = "none";
+    blurry.style.display = "none";
   }
 
   for (let prof in Team) {

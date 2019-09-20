@@ -29,9 +29,9 @@ header {
   height: 100vh;
 }
 .logo {
-  width: 15vw;
-  height: 15vw;
-  margin: 20px 0;
+  width: 20vw;
+  height: 20vw;
+  // margin: 20px 0;
 }
 
 .button {
@@ -102,6 +102,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 
   .member {
     margin: 40px 20px;
@@ -117,6 +118,7 @@ header {
       object-fit: cover;
       border: solid 1px;
       border-radius: 20px;
+      opacity: 0.8;
     }
 
     p {
@@ -145,11 +147,18 @@ header {
     transition: 0.5s;
   }
   .member:hover .potrait {
-    opacity: 0.5;
+    transition: 0.5s;
+    opacity: 1;
   }
 
   .member:hover .member-name {
     display: block;
+  }
+
+  .member-name h4 {
+    font-size: 25px;
+    margin: 20px 0;
+    font-weight: 100;
   }
 }
 
@@ -199,6 +208,17 @@ header {
   }
 }
 
+.blurry_background {
+  display: none;
+  width: 99vw;
+  height: 2000px;
+  position: absolute;
+  background: black;
+  opacity: 0.8;
+  z-index: 1;
+  filter: blur(10px);
+}
+
 .portfolio {
   .projects {
     display: flex;
@@ -230,10 +250,15 @@ header {
 }
 
 .contactForm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   input,
   textarea {
     margin: 20px;
-    width: 80%;
+    width: 80vw;
     height: 50px;
   }
 
@@ -242,23 +267,8 @@ header {
   }
 }
 
-.submission {
-  display: none;
-  background: blue;
-  width: 80%;
-  margin: 0 auto;
-  padding: 40px;
-
-  .thankYou {
-    background: black;
-    width: 100px;
-    height: 100px;
-    margin: 20px auto;
-  }
-
-  .social {
-    justify-content: center;
-  }
+.social {
+  justify-content: center;
 }
 
 @import "modules/footer";
@@ -270,15 +280,19 @@ header {
   }
 
   .hero {
-    justify-content: center;
-
+    justify-content: flex-start;
     h3 {
       margin: 0;
     }
   }
 
+  .social {
+    justify-content: flex-end;
+  }
+
   .button {
     width: 20vw;
+    cursor: pointer;
   }
   .portfolio {
   }
@@ -287,6 +301,13 @@ header {
       .potrait {
         width: 40vw;
         height: 30vw;
+      }
+    }
+
+    .member-social {
+      justify-content: center;
+      img {
+        margin: 0 10px;
       }
     }
   }
@@ -311,14 +332,7 @@ header {
     padding: 0 80px;
   }
 
-  .logo {
-    width: 10vw;
-    height: 10vw;
-  }
-
   .hero {
-    justify-content: space-evenly;
-
     p {
       font-size: 3vw;
     }
@@ -328,7 +342,6 @@ header {
       padding: 20px;
       font-size: 2vw;
       position: relative;
-      bottom: 60px;
     }
 
     .scroll {
@@ -379,12 +392,15 @@ header {
 
   .bio-wrapper {
     width: 50vw;
-    height: 90vw;
+    height: 70vw;
 
     .info p {
       font-size: 20px;
     }
+    .info h4 {
+      font-size: 5vw;
+    }
   }
 }
 
-@import "modules/feature";
+@import "modules/submission";
