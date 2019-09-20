@@ -1,1 +1,361 @@
-.navigationBar{display:flex;justify-content:space-between;align-items:center;padding:20px}.navBar{padding:20px}.navBar ul{display:flex}.navBar li{padding:20px;list-style-type:none}.hamburgerMenu{height:40px;display:flex;flex-direction:column;align-items:center;justify-content:space-around}.hamburgerMenu div{width:40px;height:5px;background:#fff;border-radius:20px}.navBar{display:none}@media screen and (min-width: 1024px){.navigationBar{padding:0 20px;align-items:center}.navigationBar .desktop{display:block}.navigationBar .desktop li{font-size:20px;margin:0 40px}.navigationBar .hamburgerMenu{display:none}}body{background:url(../images/bckgrd_Mobile.jpg);background-size:cover}.hidden{display:none}h3{font-size:40px;padding:60px 0 20px 0}p{margin:20px;text-align:justify;font-size:20px}header{height:100vh}.logo{width:15vw;height:15vw;margin:20px 0}.button{padding:10px 30px;border:solid;border-color:#fff;border-radius:10px;width:30vw;text-align:center;margin:auto}.hero{margin:20px;height:80vh;display:flex;flex-direction:column;justify-content:space-around}.hero h3{font-size:10vw;margin:60px 0 20px 0;text-align:left}.hero p{font-size:4vw;margin:0;margin-bottom:20px;text-align:left}.hero .workWithUs{width:100px;margin:0}.hero .scroll{display:none;position:absolute}.social{margin:20px 0;display:flex}.social img{width:40px;height:40px;margin-right:20px;opacity:.8}.video{width:100%;background:#232323}.video video{width:100%}#videoControls{display:flex;width:100%;background:blue;justify-content:space-between;flex-wrap:wrap}.members{display:flex;flex-wrap:wrap;justify-content:center}.members .member{margin:40px 20px;position:relative;display:flex;justify-content:center;align-items:center;cursor:pointer}.members .member .potrait{height:80vw;width:80vw;object-fit:cover;border:solid 1px;border-radius:20px}.members .member p{text-align:center}.members .member .member-name{position:absolute;display:flex;justify-content:center;display:none}.members .member-social{margin:20px 0px;display:flex;justify-content:space-around;position:absolute;bottom:0;width:100%}.members .member-social img{margin:0 auto;width:40px;height:40px;opacity:.8}.members .member-social img:hover{opacity:1;transition:.5s}.members .member:hover .potrait{opacity:.5}.members .member:hover .member-name{display:block}.bio-wrapper{display:none;flex-direction:column;width:90vw;height:700px;position:absolute;z-index:1;background:#000}.bio-wrapper img{width:100%;object-fit:cover}.bio-wrapper .info{position:absolute;bottom:0}.bio-wrapper .info h4{font-size:8vw}.bio-wrapper .info p{font-size:15px}.bio-wrapper span{position:absolute;right:0;top:0;font-size:40px;z-index:1;cursor:pointer}.bio-wrapper .member-social{justify-content:center;position:static}.bio-wrapper .member-social img{margin:10px}.portfolio .projects{display:flex;flex-wrap:wrap}.portfolio .project{height:50vw;width:100%;background:blue}.portfolio .project:nth-child(1){background:green}.portfolio .seeMore{margin-top:20px}.contact h4{margin:20px}.contact .underline{text-decoration:underline}.contactForm input,.contactForm textarea{margin:20px;width:80%;height:50px}.contactForm textarea{height:200px}.submission{display:none;background:blue;width:80%;margin:0 auto;padding:40px}.submission .thankYou{background:#000;width:100px;height:100px;margin:20px auto}.submission .social{justify-content:center}footer{padding:20px}footer h3,footer li{font-size:20px;text-align:left;text-decoration:none;margin:0}footer a{font-size:15px;font-weight:100;line-height:20px}footer p{font-size:10px;margin:0;margin-top:40px;padding:0}footer .nav{display:flex;flex-wrap:wrap;justify-content:space-between}footer .subnav{width:120px;padding:20px 0}@media screen and (min-width: 768px){footer{padding:40px}}@media screen and (min-width: 768px){body{background:url(../images/bckgrd_Tablet.jpg);background-size:cover}.hero{justify-content:center}.hero h3{margin:0}.button{width:20vw}.ourTeam .member .potrait{width:40vw;height:40vw}.bio-wrapper{width:70vw;height:100%}.bio-wrapper img{height:100%}}@media screen and (min-width: 1024px){body{background:url(../images/background.jpg);background-size:cover}header{padding:0 80px}.logo{width:10vw;height:10vw}.hero{justify-content:space-evenly}.hero p{font-size:3vw}.hero .workWithUs{width:15vw;padding:20px;font-size:2vw;position:relative;bottom:60px}.hero .scroll{display:flex;position:absolute;bottom:0;margin:20px;font-size:20px}.hero .social{position:absolute;right:80px;bottom:0}.aboutUs .wrapper{display:flex;align-items:center;justify-content:center}.aboutUs .wrapper .description{width:40%;padding:20px}.aboutUs .wrapper .description h4{font-size:30px}.aboutUs .video{width:50%}.ourTeam .member .potrait{width:20vw;height:20vw}.portfolio .project{width:50%;height:30vw}.bio-wrapper{width:50vw;height:90vw}.bio-wrapper .info p{font-size:20px}}/*# sourceMappingURL=main.css.map */
+.navigationBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; }
+
+.navBar {
+  padding: 20px; }
+  .navBar ul {
+    display: flex; }
+  .navBar li {
+    padding: 20px;
+    list-style-type: none; }
+
+.hamburgerMenu {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+  .hamburgerMenu div {
+    width: 40px;
+    height: 5px;
+    background: white;
+    border-radius: 20px; }
+
+.navBar {
+  display: none; }
+
+@media screen and (min-width: 1024px) {
+  .navigationBar {
+    padding: 0 20px;
+    align-items: center; }
+    .navigationBar .desktop {
+      display: block; }
+      .navigationBar .desktop li {
+        font-size: 20px;
+        margin: 0 40px; }
+    .navigationBar .hamburgerMenu {
+      display: none; } }
+body {
+  background: url(../images/bckgrd_Mobile.jpg);
+  background-size: cover; }
+
+.hidden {
+  display: none; }
+
+h3 {
+  font-size: 40px;
+  padding: 60px 0 20px 0; }
+
+p {
+  margin: 20px;
+  text-align: justify;
+  font-size: 20px; }
+
+header {
+  height: 100vh; }
+
+.logo {
+  width: 15vw;
+  height: 15vw;
+  margin: 20px 0; }
+
+.button {
+  padding: 10px 30px;
+  border: solid 1px;
+  border-color: white;
+  border-radius: 10px;
+  width: 30vw;
+  text-align: center;
+  margin: auto; }
+
+.hero {
+  margin: 20px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .hero p {
+    font-size: 10vw;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: left; }
+  .hero .workWithUs {
+    width: 100px;
+    margin: 0; }
+  .hero .scroll {
+    display: none;
+    position: absolute; }
+
+.social {
+  margin: 20px 0;
+  display: flex; }
+  .social img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    opacity: 0.8; }
+
+.video {
+  width: 100%;
+  background: #232323; }
+  .video video {
+    width: 100%; }
+
+#videoControls {
+  display: flex;
+  width: 100%;
+  background: purple;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  #videoControls #playPause, #videoControls #fullScreen, #videoControls #mute {
+    width: 20%;
+    background-color: purple; }
+    #videoControls #playPause img, #videoControls #fullScreen img, #videoControls #mute img {
+      width: 30%; }
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .members .member {
+    margin: 40px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    .members .member .potrait {
+      height: 80vw;
+      width: 80vw;
+      object-fit: cover;
+      border: solid 1px;
+      border-radius: 20px; }
+    .members .member p {
+      text-align: center; }
+    .members .member .member-name {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      display: none; }
+  .members .member-social {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+  .members .member-social img {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    opacity: 0.8; }
+  .members .member-social img:hover {
+    opacity: 1;
+    transition: 0.5s; }
+  .members .member:hover .potrait {
+    opacity: 0.5; }
+  .members .member:hover .member-name {
+    display: block; }
+
+.bio-wrapper {
+  display: none;
+  flex-direction: column;
+  width: 90vw;
+  height: 700px;
+  position: absolute;
+  z-index: 1;
+  background: black; }
+  .bio-wrapper img {
+    width: 100%;
+    object-fit: cover; }
+  .bio-wrapper .info {
+    position: absolute;
+    bottom: 0; }
+    .bio-wrapper .info h4 {
+      font-size: 8vw; }
+    .bio-wrapper .info p {
+      font-size: 15px; }
+  .bio-wrapper span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 40px;
+    z-index: 1;
+    cursor: pointer; }
+  .bio-wrapper .member-social {
+    justify-content: center;
+    position: static; }
+    .bio-wrapper .member-social img {
+      margin: 10px; }
+
+.portfolio .projects {
+  display: flex;
+  flex-wrap: wrap; }
+.portfolio .project {
+  height: 50vw;
+  width: 100%;
+  background: blue; }
+.portfolio .project:nth-child(1) {
+  background: green; }
+.portfolio .seeMore {
+  margin-top: 20px; }
+
+.contact h4 {
+  margin: 20px; }
+.contact .underline {
+  text-decoration: underline; }
+
+.contactForm ::placeholder {
+  font-size: 18px;
+  opacity: 0.5;
+  padding: 10px 20px; }
+.contactForm input,
+.contactForm textarea {
+  margin: 20px;
+  width: 50%;
+  height: 50px;
+  border: solid 1px white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  padding-left: 10px; }
+.contactForm textarea {
+  height: 200px;
+  padding: 5px 20px;
+  border: solid 1px;
+  border-color: white;
+  border-radius: 10px;
+  width: 30vw;
+  margin: auto; }
+.contactForm #Message {
+  margin-bottom: 20px; }
+.contactForm input:active {
+  outline: none; }
+
+.submission {
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px; }
+  .submission .thankYou {
+    background: black;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto; }
+  .submission .social {
+    justify-content: center; }
+
+footer {
+  padding: 20px; }
+  footer h3,
+  footer li {
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    margin: 0; }
+  footer a {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 20px; }
+  footer p {
+    font-size: 10px;
+    margin: 0;
+    margin-top: 40px;
+    padding: 0; }
+  footer .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  footer .subnav {
+    width: 120px;
+    padding: 20px 0; }
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 40px; } }
+@media screen and (min-width: 768px) {
+  body {
+    background: url(../images/bckgrd_Tablet.jpg);
+    background-size: cover; }
+
+  .hero {
+    justify-content: center; }
+    .hero h3 {
+      margin: 0; }
+
+  .button {
+    width: 20vw; }
+
+  .ourTeam .member .potrait {
+    width: 40vw;
+    height: 40vw; }
+
+  .bio-wrapper {
+    width: 70vw;
+    height: 100%; }
+    .bio-wrapper img {
+      height: 100%; } }
+@media screen and (min-width: 1024px) {
+  body {
+    background: url(../images/background.jpg);
+    background-size: cover; }
+
+  header {
+    padding: 0 80px; }
+
+  .logo {
+    width: 10vw;
+    height: 10vw; }
+
+  .hero {
+    justify-content: space-evenly; }
+    .hero p {
+      font-size: 3vw; }
+    .hero .workWithUs {
+      width: 15vw;
+      padding: 20px;
+      font-size: 2vw;
+      position: relative;
+      bottom: 60px; }
+    .hero .scroll {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      margin: 20px;
+      font-size: 20px; }
+    .hero .social {
+      position: absolute;
+      right: 80px;
+      bottom: 0; }
+
+  .aboutUs .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .aboutUs .wrapper .description {
+      width: 40%;
+      padding: 20px; }
+      .aboutUs .wrapper .description h4 {
+        font-size: 30px; }
+  .aboutUs .video {
+    width: 50%; }
+
+  .ourTeam .member .potrait {
+    width: 20vw;
+    height: 20vw; }
+
+  .portfolio .project {
+    width: 50%;
+    height: 30vw; }
+
+  .bio-wrapper {
+    width: 50vw;
+    height: 90vw; }
+    .bio-wrapper .info p {
+      font-size: 20px; } }
+
+/*# sourceMappingURL=main.css.map */
