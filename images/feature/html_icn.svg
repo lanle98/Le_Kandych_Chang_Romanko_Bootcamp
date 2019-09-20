@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="138" height="138" viewBox="0 0 138 138">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_4" data-name="Ellipse 4" cx="69" cy="69" r="69" transform="translate(0)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="html_icn" transform="translate(0)" clip-path="url(#clip-path)">
+    <g id="html-5" transform="translate(0)">
+      <circle id="Ellipse_10" data-name="Ellipse 10" cx="69" cy="69" r="69" transform="translate(0)" fill="rgba(106,106,106,0.4)"/>
+      <path id="Path_40" data-name="Path 40" d="M35.831,33.313l5.475,70.028a2.592,2.592,0,0,0,1.8,2.267l28.8,9.132a2.6,2.6,0,0,0,1.564,0l28.8-9.132a2.592,2.592,0,0,0,1.8-2.267l5.482-70.028a2.589,2.589,0,0,0-2.582-2.789H38.416a2.589,2.589,0,0,0-2.585,2.789Zm59.677,21.73H59.841l1.075,9.922H94.738l-2.213,28.3L72.69,99.557,52.859,93.268,51.7,78.48H62.112v7.247l10.856,2.917,10.793-2.917L84.6,74.17H51.366l-2.207-28.23H96.225Z" transform="translate(-3.004 -0.054)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
