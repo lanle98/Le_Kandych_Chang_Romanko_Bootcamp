@@ -4,7 +4,7 @@ const Team = {
     popup: "lan_popup.jpg",
     name: "Lan Le",
     bio:
-      "Hi, my name is Lan. I'm from Vietnam which is a pretty nice and friendly country. I am passionate about designs, movies, music and recently codes. I want to be a Front-End Developer after I finish school at Fanshawe College. Check out my Instagram for more cool stuffs",
+      "Lan Le is a Front End Developer at Digital Lights, he is really into codes and computer. He works with the designers in order to bring the best experience to the clients and users. If you want to contact him for more questions, just click on his social media links and get in touch. ",
     linkedin: "https://www.linkedin.com/",
     facebook: "https://www.facebook.com/lan.le.1998",
     twitter: "https://twitter.com/?lang=en",
