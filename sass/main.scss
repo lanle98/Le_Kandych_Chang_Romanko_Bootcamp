@@ -31,6 +31,7 @@ p {
 
 header {
   height: 100vh;
+  min-height: 800px;
 }
 .logo {
   width: 20vw;
@@ -68,36 +69,34 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-    .button {
-      align-self: flex-start;
-    }
-   h3 {
+  .button {
+    align-self: flex-start;
+  }
+  h3 {
     font-size: 8vw;
     margin: 60px 0 20px 0;
     text-align: left;
-
-   }
-    p {
-      font-size: 6vw;
-      margin: 0;
-      margin-bottom: 20px;
-      text-align: left;
-    }
-
+  }
+  p {
+    font-size: 6vw;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: left;
+  }
 
   .scroll {
     display: none;
     position: absolute;
   }
 }
-.description{
-  h4{
+.description {
+  h4 {
     font-size: $description;
     font-weight: 400;
   }
-  p{
+  p {
     padding: 5px 60px 40px 60px;
-   }
+  }
 }
 
 .social {
@@ -337,13 +336,6 @@ header {
     padding: 10px 20px;
   }
 
-  form {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 60px;
-  }
-
   .formColumn {
     display: flex;
     flex-direction: column;
@@ -373,6 +365,7 @@ header {
   textarea {
     margin: 0px 0px 0px 0px;
     height: 270px;
+    width: 70vw;
     // padding: 5px 20px;
     flex: 1 1 300px;
   }
@@ -411,7 +404,7 @@ header {
     background: url(../images/bckgrd_Tablet.jpg);
     background-size: cover;
   }
-  header{
+  header {
     padding: 0 90px;
   }
 
@@ -423,16 +416,16 @@ header {
     }
     p {
       font-size: 6vh;
-    };
+    }
   }
 
-  .description{
-    h4{
+  .description {
+    h4 {
       font-size: $description;
     }
-     p{
+    p {
       padding: 5px 60px 40px 60px;
-     }
+    }
   }
 
   .social {
@@ -482,6 +475,13 @@ header {
         url("../images/desktop_portfolio_pic2.jpg") no-repeat center;
     }
   }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px;
+  }
 }
 
 // DESKTOP VERSION
@@ -496,7 +496,7 @@ header {
   }
 
   .hero {
-    h3{
+    h3 {
       font-size: 6vw;
     }
     p {
