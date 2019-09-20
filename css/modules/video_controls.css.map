@@ -1,1 +1,11 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["../../sass/modules/video_controls.scss"],"names":[],"mappings":"AAAA,eACE,aACA,WACA,kBACA,8BACA,eACC,0EACD,UACC,wBACA,sFACE","file":"video_controls.css"}
+=======
+{
+"version": 3,
+"mappings": "AAAA,cAAe,CACb,OAAO,CAAE,IAAI,CACb,KAAK,CAAE,IAAI,CACX,UAAU,CAAE,IAAI,CAChB,eAAe,CAAE,aAAa,CAC9B,SAAS,CAAE,IAAI",
+"sources": ["../../sass/modules/video_controls.scss"],
+"names": [],
+"file": "video_controls.css"
+}
+>>>>>>> 292d5aa25c9aebcdffbdd94b6f6c98f70f1c5312

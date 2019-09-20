@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 #videoControls{display:flex;width:100%;background:purple;justify-content:space-between;flex-wrap:wrap}#videoControls #playPause,#videoControls #fullScreen,#videoControls #mute{width:20%;background-color:purple}#videoControls #playPause img,#videoControls #fullScreen img,#videoControls #mute img{width:30%}/*# sourceMappingURL=video_controls.css.map */
+=======
+#videoControls{display:flex;width:100%;background:blue;justify-content:space-between;flex-wrap:wrap}
+/*# sourceMappingURL=video_controls.css.map */
+>>>>>>> 292d5aa25c9aebcdffbdd94b6f6c98f70f1c5312
