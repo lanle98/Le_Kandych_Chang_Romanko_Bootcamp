@@ -1,0 +1,30 @@
+.submission {
+  background: url(../images/submission/desktop_thank_you_page.jpg);
+  width: 80vw;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+
+  .thankYou {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+  }
+
+  p {
+    font-size: 15px;
+  }
+  .button {
+    margin: 20px auto;
+  }
+}
+
+.thank-you {
+  display: flex;
+}

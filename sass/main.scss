@@ -10,6 +10,10 @@ body {
   background-size: cover;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .hidden {
   display: none;
 }
@@ -25,15 +29,13 @@ p {
   font-size: 20px;
 }
 
-
-
 header {
   height: 100vh;
 }
 .logo {
-  width: 15vw;
-  height: 15vw;
-  margin: 20px 0;
+  width: 20vw;
+  height: 20vw;
+  // margin: 20px 0;
 }
 
 .button {
@@ -53,19 +55,18 @@ header {
   flex-direction: column;
   justify-content: space-around;
 
-// h3 {
-//   font-size: 5vw;
-//    margin: 60px 0 20px 0;
-//    text-align: left;
-  
-//  }
-   p {
+  // h3 {
+  //   font-size: 5vw;
+  //    margin: 60px 0 20px 0;
+  //    text-align: left;
+
+  //  }
+  p {
     font-size: 10vw;
     margin: 0;
     margin-bottom: 20px;
     text-align: left;
   }
-  
 
   .workWithUs {
     width: 100px;
@@ -116,14 +117,14 @@ header {
   justify-content: center;
   align-items: center;
   background: url(../images/video_overlay_small.jpg) no-repeat center center;
-  
+
   img {
     height: 100px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
   &:hover {
     img {
-      opacity: .5;
+      opacity: 0.5;
     }
   }
 }
@@ -132,32 +133,27 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 
   .member {
     margin: 40px 20px;
     position: relative;
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 
     .potrait {
-      height: $square_size_mobile;
-      width: $square_size_mobile;
+      height: 50vw;
+      width: 80vw;
       object-fit: cover;
       border: solid 1px;
       border-radius: 20px;
+      opacity: 0.8;
     }
 
     p {
       text-align: center;
-    }
-
-    .member-name {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      display: none;
     }
   }
 
@@ -165,7 +161,7 @@ header {
     margin: 20px 0px;
     display: flex;
     justify-content: space-around;
-    position: absolute;
+    // position: absolute;
     bottom: 0;
     width: 100%;
   }
@@ -182,11 +178,18 @@ header {
     transition: 0.5s;
   }
   .member:hover .potrait {
-    opacity: 0.5;
+    transition: 0.5s;
+    opacity: 1;
   }
 
   .member:hover .member-name {
     display: block;
+  }
+
+  .member-name h4 {
+    font-size: 25px;
+    margin: 20px 0;
+    font-weight: 100;
   }
 }
 
@@ -237,6 +240,17 @@ header {
   }
 }
 
+.blurry_background {
+  display: none;
+  width: 99vw;
+  height: 2000px;
+  position: absolute;
+  background: black;
+  opacity: 0.8;
+  z-index: 1;
+  filter: blur(10px);
+}
+
 .portfolio {
   .projects {
     display: flex;
@@ -268,46 +282,45 @@ header {
 }
 
 .contactForm {
- ::placeholder
- {
-   font-size: 18px;
-   opacity: 0.5;
-   padding: 10px 20px;
- }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  ::placeholder {
+    font-size: 18px;
+    opacity: 0.5;
+    padding: 10px 20px;
+  }
+
   input,
   textarea {
     margin: 20px;
-    width: 50%;
+    width: 80vw;
     height: 50px;
-    border:solid 1px white;
+    border: solid 1px white;
     border-radius: 10px;
     background-color: transparent;
-    color:$text-color;
+    color: $text-color;
     font-size: 18px;
-    padding-left: 10px;
+
     outline: none;
-  
-    
   }
 
   textarea {
-   height: 200px;
-  padding: 5px 20px;
-  border: solid 1px;
-  border-color: white;
-  border-radius: 10px;
-  width: 30vw;
-  margin: auto;
-  
+    height: 200px;
+    padding: 5px 20px;
+    border: solid 1px;
+    border-color: white;
+    border-radius: 10px;
   }
-  #Message
-  {
-margin-bottom: 20px;
+  #Message {
+    margin-bottom: 20px;
   }
- input:active {
+  input:active {
     outline: none;
-    
-}
+  }
 }
 
 .submission {
@@ -337,22 +350,33 @@ margin-bottom: 20px;
   }
 
   .hero {
-    justify-content: center;
-
+    justify-content: flex-start;
     h3 {
       margin: 0;
     }
   }
 
+  .social {
+    justify-content: flex-end;
+  }
+
   .button {
     width: 20vw;
+    cursor: pointer;
   }
- 
+
   .ourTeam {
     .member {
       .potrait {
-        width: $square_size_tablet;
-        height: $square_size_tablet;
+        width: 40vw;
+        height: 30vw;
+      }
+    }
+
+    .member-social {
+      justify-content: center;
+      img {
+        margin: 0 10px;
       }
     }
   }
@@ -382,14 +406,7 @@ margin-bottom: 20px;
     padding: 0 80px;
   }
 
-  .logo {
-    width: 10vw;
-    height: 10vw;
-  }
-
   .hero {
-    justify-content: space-evenly;
-
     p {
       font-size: 3vw;
     }
@@ -399,7 +416,6 @@ margin-bottom: 20px;
       padding: 20px;
       font-size: 2vw;
       position: relative;
-      bottom: 60px;
     }
 
     .scroll {
@@ -443,10 +459,6 @@ margin-bottom: 20px;
 
   .ourTeam {
     .member {
-      .potrait {
-        width: $square_size_desktop;
-        height: $square_size_desktop;
-      }
     }
   }
   .portfolio {
@@ -458,10 +470,15 @@ margin-bottom: 20px;
 
   .bio-wrapper {
     width: 50vw;
-    height: 90vw;
+    height: 70vw;
 
     .info p {
       font-size: 20px;
     }
+    .info h4 {
+      font-size: 5vw;
+    }
   }
 }
+
+@import "modules/submission";
