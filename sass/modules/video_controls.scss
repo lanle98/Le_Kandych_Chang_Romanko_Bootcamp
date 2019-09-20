@@ -1,7 +1,19 @@
 #videoControls {
+  outline: none;
   display: flex;
   width: 100%;
-  background: blue;
+  background: purple;
   justify-content: space-between;
   flex-wrap: wrap;
+  #playPause,
+  #fullScreen,
+  #mute {
+    outline: none;
+    width: 20%;
+    background-color: purple;
+    img {
+      width: 30%;
+      //  margin-left: 60px;
+    }
+  }
 }

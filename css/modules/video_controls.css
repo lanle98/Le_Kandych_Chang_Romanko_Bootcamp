@@ -1,1 +1,1 @@
-#videoControls{display:flex;width:100%;background:blue;justify-content:space-between;flex-wrap:wrap}/*# sourceMappingURL=video_controls.css.map */
+#videoControls{outline:none;display:flex;width:100%;background:purple;justify-content:space-between;flex-wrap:wrap}#videoControls #playPause,#videoControls #fullScreen,#videoControls #mute{outline:none;width:20%;background-color:purple}#videoControls #playPause img,#videoControls #fullScreen img,#videoControls #mute img{width:30%}/*# sourceMappingURL=video_controls.css.map */

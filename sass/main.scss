@@ -1,5 +1,9 @@
+//sass --watch sass:css --style compressed
+
 @import "modules/navbar";
 @import "vars";
+@import "modules/video_controls.scss";
+@import "modules/footer";
 
 body {
   background: url(../images/bckgrd_Mobile.jpg);
@@ -36,7 +40,7 @@ header {
 
 .button {
   padding: 10px 30px;
-  border: solid;
+  border: solid 1px;
   border-color: white;
   border-radius: 10px;
   width: 30vw;
@@ -51,14 +55,14 @@ header {
   flex-direction: column;
   justify-content: space-around;
 
-  h3 {
-    font-size: 10vw;
-    margin: 60px 0 20px 0;
-    text-align: left;
-  }
+  // h3 {
+  //   font-size: 5vw;
+  //    margin: 60px 0 20px 0;
+  //    text-align: left;
 
+  //  }
   p {
-    font-size: 4vw;
+    font-size: 10vw;
     margin: 0;
     margin-bottom: 20px;
     text-align: left;
@@ -88,15 +92,42 @@ header {
 }
 
 .video {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   background: #232323;
+  cursor: pointer;
 
   video {
     width: 100%;
   }
 }
 
-@import "modules/video_controls.scss";
+.videoOverlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/video_overlay_small.jpg) no-repeat center center;
+
+  img {
+    height: 100px;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    img {
+      opacity: 0.5;
+    }
+  }
+}
 
 .members {
   display: flex;
@@ -185,6 +216,7 @@ header {
     }
 
     p {
+      margin: 40px;
       font-size: 15px;
     }
   }
@@ -231,7 +263,7 @@ header {
     background: blue;
   }
 
-  .project:nth-child(1) {
+  .project:nth-child(odd) {
     background: green;
   }
 
@@ -255,24 +287,62 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  ::placeholder {
+    font-size: 18px;
+    opacity: 0.5;
+    padding: 10px 20px;
+  }
+
   input,
   textarea {
     margin: 20px;
     width: 80vw;
     height: 50px;
+    border: solid 1px white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: $text-color;
+    font-size: 18px;
+
+    outline: none;
   }
 
   textarea {
     height: 200px;
+    padding: 5px 20px;
+    border: solid 1px;
+    border-color: white;
+    border-radius: 10px;
+  }
+  #Message {
+    margin-bottom: 20px;
+  }
+  input:active {
+    outline: none;
   }
 }
 
-.social {
-  justify-content: center;
+.submission {
+  display: none;
+  // background: blue;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+
+  .thankYou {
+    background: black;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+  }
+
+  .social {
+    justify-content: center;
+  }
 }
 
-@import "modules/footer";
-
+// TABLET VERSION
 @media screen and (min-width: 768px) {
   body {
     background: url(../images/bckgrd_Tablet.jpg);
@@ -294,8 +364,7 @@ header {
     width: 20vw;
     cursor: pointer;
   }
-  .portfolio {
-  }
+
   .ourTeam {
     .member {
       .potrait {
@@ -320,8 +389,13 @@ header {
       height: 100%;
     }
   }
+
+  .videoOverlay {
+    background: url(../images/video_overlay_large.jpg) no-repeat center center;
+  }
 }
 
+// DESKTOP VERSION
 @media screen and (min-width: 1024px) {
   body {
     background: url(../images/background.jpg);
@@ -377,6 +451,10 @@ header {
     .video {
       width: 50%;
     }
+
+    .videoOverlay {
+      background: url(../images/video_overlay_small.jpg) no-repeat center center;
+    }
   }
 
   .ourTeam {
@@ -385,7 +463,7 @@ header {
   }
   .portfolio {
     .project {
-      width: 50%;
+      width: 33.33%;
       height: 30vw;
     }
   }

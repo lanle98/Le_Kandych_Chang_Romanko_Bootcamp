@@ -6,7 +6,8 @@
     muteButton = document.querySelector("#mute"),
     fullScreenButton = document.querySelector("#fullScreen"),
     timeBar = document.querySelector("#timeBar"),
-    volumeBar = document.querySelector("#volumeBar");
+    volumeBar = document.querySelector("#volumeBar"),
+    videoOverlay = document.querySelector(".videoOverlay");
 
   function loadVideo() {
     video.load();
@@ -15,11 +16,12 @@
 
   function playPause() {
     if (video.paused == true) {
+      videoOverlay.style.display = "none";
       video.play(); // Play the video
       playButton.innerHTML = "Pause"; // Update the button text to 'Pause'
     } else {
       video.pause(); // Pause the video
-      playButton.innerHTML = "Play"; // Update the button text to 'Play'
+      playButton.innerHTML = `<img id="playPause" src="images/play_button.svg" alt="Play svg icon">`; // Update the button text to 'Play'
     }
   }
 
@@ -78,6 +80,7 @@
   // playing and pausing the video
   playButton.addEventListener("click", playPause);
   video.addEventListener("click", playPause);
+  videoOverlay.addEventListener("click", playPause);
 
   //other video controls
   muteButton.addEventListener("click", muteUnmute);
