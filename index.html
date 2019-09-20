@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,700,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,700,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
-  
+
     <title>Digital Lights</title>
   </head>
   <body>
-      
     <h1 class="hidden">Bootcamp</h1>
     <header>
       <h2 class="hidden">Header</h2>
@@ -25,7 +27,6 @@
         /></a>
         <div class="navBar desktop top">
           <ul>
-            
             <li class="scrollTo">About</li>
             <li class="scrollTo">Portfolio</li>
             <li class="scrollTo">Contact</li>
@@ -36,31 +37,37 @@
           <div></div>
           <div></div>
         </div>
-        
       </div>
       <div class="navBar mobile">
         <ul>
-       
-            <li class="scrollTo">About</li>
-            <li class="scrollTo">Portfolio</li>
-            <li class="scrollTo">Contact</li>
+          <li class="scrollTo">About</li>
+          <li class="scrollTo">Portfolio</li>
+          <li class="scrollTo">Contact</li>
         </ul>
       </div>
       <div class="hero">
         <div>
-        <!-- <h3>Digital Lights</h3>  -->
+          <!-- <h3>Digital Lights</h3>  -->
           <p>
             We create sparks in the community
           </p>
         </div>
 
-        <div class="button workWithUs"><a href="##">Work with us</a></div>
-        <div class="scroll">Scroll  ↓</div>
+        <div class="btnCon"><a class="button" href="#">Work with us</a></div>
+        <div class="scroll">Scroll ↓</div>
         <div class="social">
-          <a href="https://www.facebook.com/"><img src="images/social_media/linkedin.svg" alt="linkedin"></a>
-          <a href="https://www.facebook.com/"><img src="images/social_media/twitter.svg" alt="twitter"></a>
-          <a href="https://www.facebook.com/"><img src="images/social_media/facebook.svg" alt="facebook"></a>
-          <a href="https://www.facebook.com/"><img src="images/social_media/instagram.svg" alt="instagram"></a>
+          <a href="https://www.facebook.com/"
+            ><img src="images/social_media/linkedin.svg" alt="linkedin"
+          /></a>
+          <a href="https://www.facebook.com/"
+            ><img src="images/social_media/twitter.svg" alt="twitter"
+          /></a>
+          <a href="https://www.facebook.com/"
+            ><img src="images/social_media/facebook.svg" alt="facebook"
+          /></a>
+          <a href="https://www.facebook.com/"
+            ><img src="images/social_media/instagram.svg" alt="instagram"
+          /></a>
         </div>
       </div>
     </header>
@@ -70,103 +77,134 @@
       <section class="aboutUs  About">
         <h3>About Us</h3>
         <div class="wrapper">
-        <div class="description">
-          <h4>Welcome To Our World</h4>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
-            explicabo quos inventore, magni excepturi corrupti itaque quia
-            cupiditate? Nulla necessitatibus autem earum velit quae voluptate
-            quidem nemo aut corrupti ipsam!
-          </p>
-        </div>
-        <div class="video">
-          <div class="videoOverlay">
-            <img src="images/play_button.svg" alt="Play Button">
+          <div class="description">
+            <h4>Welcome To Our World</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+              explicabo quos inventore, magni excepturi corrupti itaque quia
+              cupiditate? Nulla necessitatibus autem earum velit quae voluptate
+              quidem nemo aut corrupti ipsam!
+            </p>
           </div>
-          <video src="video/bootcamp_video.mp4" muted></video>
-          <!-- video controls -->
-          <div id="videoControls">
-                <button type="button" id="playPause" ></button>
-                <input type="range" id="timeBar" value="0">
-                <button type="button" id="mute"><img src="images/muted.svg" alt="Mute svg icon"></button>
-                <input type="range" id="volumeBar" min="0" max="1" step="0.1" value="0">
-                <button type="button" id="fullScreen"><img src="images/expand.svg" alt="Expended svg icon"></button>
+          <div class="video">
+            <div class="videoOverlay">
+              <img src="images/play_button.svg" alt="Play Button" />
+            </div>
+            <video src="video/bootcamp_video.mp4" muted></video>
+            <!-- video controls -->
+            <div id="videoControls">
+              <div>
+                <img
+                  id="playPause"
+                  src="images/play_button.svg"
+                  alt="Play svg icon"
+                />
+              </div>
+              <input type="range" id="timeBar" value="0" />
+              <div>
+                <img id="mute" src="images/muted.svg" alt="Mute svg icon" />
+              </div>
+              <input
+                type="range"
+                id="volumeBar"
+                min="0"
+                max="1"
+                step="0.1"
+                value="0"
+              />
+              <div>
+                <img
+                  id="fullScreen"
+                  src="images/expand.svg"
+                  alt="Expended svg icon"
+                />
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </section>
 
       <section class="ourTeam">
         <h3>Our Team</h3>
         <div class="members">
-            <div class="blurry_background"></div>
-            <div class="bio-wrapper">
-              <span>&times</span>
-              <img src="" alt="avatar">
-              <div class="info">
-                <h4></h4>
-                <p></p>
-                <div class="member-social">
-                  
-                </div>
-              </div>
-              
+          <div class="blurry_background"></div>
+          <div class="bio-wrapper">
+            <span>&times</span>
+            <img src="" alt="avatar" />
+            <div class="info">
+              <h4></h4>
+              <p></p>
+              <div class="member-social"></div>
             </div>
-        
-        
-      </div>
+          </div>
+        </div>
       </section>
-    
 
       <section class="portfolio Portfolio">
         <h3>Portfolio</h3>
         <div class="projects">
-          <div class="project"></div>
-          <div class="project"></div>
-          <div class="project"></div>
-          <div class="project"></div>
-          <div class="project"></div>
-          <div class="project"></div>
+          <a class="project" href="feature.html"></a>
+          <a class="project" href="feature.html"></a>
+          <a class="project" href="feature.html"></a>
+          <a class="project" href="feature.html"></a>
+          <a class="project" href="feature.html"></a>
+          <a class="project" href="feature.html"></a>
         </div>
-        <div class="seeMore button"><a href=""></a>See more</a></div>
+        <div class="btnCon"><a class="button" href="#">See more</a></div>
       </section>
 
-      
       <section class="contact Contact">
         <h3>Contact Us</h3>
         <div class="contactInfo">
           <h4>Digital Lights</h4>
           <h4>Phone: 1-111-111-111</h4>
-          <h4>Outside the U.S & Canada click <a class="underline" href="#">here</a></h4>
-          <h4>Email: <a class="underline" href="#">digital.lights@lights.com</a></h4>
+          <h4>
+            Outside the U.S & Canada click
+            <a class="underline" href="#">here</a>
+          </h4>
+          <h4>
+            Email: <a class="underline" href="#">digital.lights@lights.com</a>
+          </h4>
         </div>
 
         <div class="contactForm">
-
-            <section class="submission">
-                <div class="thankYou">
-                  <img src="images/submission/thank-you_icon.svg" alt="thank-you_icon" width="100%">
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In voluptatem totam molestiae a unde? </p>
-                <div class="button back">Back to page</div>
-                <h4>Follow Us</h4>
-                <div class="social">
-                    <a href="https://www.facebook.com/"><img src="images/social_media/linkedin.svg" alt="linkedin"></a>
-                    <a href="https://www.facebook.com/"><img src="images/social_media/twitter.svg" alt="twitter"></a>
-                    <a href="https://www.facebook.com/"><img src="images/social_media/facebook.svg" alt="facebook"></a>
-                    <a href="https://www.facebook.com/"><img src="images/social_media/instagram.svg" alt="instagram"></a>
-                </div>
-              </section>
+          <section class="submission">
+            <div class="thankYou">
+              <img
+                src="images/submission/thank-you_icon.svg"
+                alt="thank-you_icon"
+              />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+              voluptatem totam molestiae a unde?
+            </p>
+            <div class="button back">Back to page</div>
+            <h4>Follow Us</h4>
+            <div class="social">
+              <a href="https://www.facebook.com/"
+                ><img src="images/social_media/linkedin.svg" alt="linkedin"
+              /></a>
+              <a href="https://www.facebook.com/"
+                ><img src="images/social_media/twitter.svg" alt="twitter"
+              /></a>
+              <a href="https://www.facebook.com/"
+                ><img src="images/social_media/facebook.svg" alt="facebook"
+              /></a>
+              <a href="https://www.facebook.com/"
+                ><img src="images/social_media/instagram.svg" alt="instagram"
+              /></a>
+            </div>
+          </section>
 
           <form>
-            <input placeholder="First Name" /><br />
-            <input placeholder="Last Name" /><br />
-            <input placeholder="Phone" /><br />
-            <input placeholder="Email" /><br />
-            <div id="Message">
-              <textarea name="comments" placeholder="Message"></textarea>
+            <div class="formColumn">
+              <input placeholder="First Name" />
+              <input placeholder="Last Name" />
+              <input placeholder="Phone" />
+              <input placeholder="Email" />
             </div>
-            
+            <textarea name="comments" placeholder="Message"></textarea>
           </form>
           <div class="send button">Send</div>
         </div>
@@ -176,8 +214,8 @@
     <footer>
       <h2 class="hidden">Footer</h2>
       <a href="index.html"
-      ><img class="logo" src="images/Logo.svg" alt="logo"
-    /></a>
+        ><img class="logo" src="images/Logo.svg" alt="logo"
+      /></a>
       <div class="nav">
         <div class="about subnav">
           <h3 class="scrollTo">About</h3>
@@ -189,43 +227,35 @@
           </ul>
         </div>
         <div class="contact subnav">
-            <h3 class="scrollTo">Contact</h3>
-            <ul>
-              <li><a>Our Team</a></li>
-              <li><a>Our Partners</a></li>
-              
-            </ul>
-          </div>
-          <div class="portfolio subnav">
-              <h3 class="scrollTo">Portfolio</h3>
-              <ul>
-                <li><a>Our Team</a></li>
-                
-              </ul>
-            </div>
-            <div class="follow subnav">
-                <h3>Follow Us</h3>
-                <ul>
-                  <li><a>Our Team</a></li>
-                  <li><a>Our Partners</a></li>
-                  <li><a>Advertise With Us</a></li>
-                  <li><a>Cookie Policy</a></li>
-                </ul>
-              </div>
-              </div>
-      
+          <h3 class="scrollTo">Contact</h3>
+          <ul>
+            <li><a>Our Team</a></li>
+            <li><a>Our Partners</a></li>
+          </ul>
+        </div>
+        <div class="portfolio subnav">
+          <h3 class="scrollTo">Portfolio</h3>
+          <ul>
+            <li><a>Our Team</a></li>
+          </ul>
+        </div>
+        <div class="follow subnav">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a>Our Team</a></li>
+            <li><a>Our Partners</a></li>
+            <li><a>Advertise With Us</a></li>
+            <li><a>Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
       <p>Copyright (c) 2019 Digital Lights</p>
     </footer>
-  
-
-
-    
 
     <script type="module" src="js/main.js"></script>
     <script src="js/video_controls.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/scroll.js"></script>
-
-
   </body>
 </html>
