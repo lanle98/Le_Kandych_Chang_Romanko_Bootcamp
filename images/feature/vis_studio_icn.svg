@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="138" height="138" viewBox="0 0 138 138">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_38" data-name="Path 38" d="M69,0A69,69,0,1,1,0,69,69,69,0,0,1,69,0Z" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="vis_studio_icn" transform="translate(0)" clip-path="url(#clip-path)">
+    <g id="visual-studio" transform="translate(-0.571)">
+      <circle id="Ellipse_9" data-name="Ellipse 9" cx="69" cy="69" r="69" fill="rgba(106,106,106,0.4)"/>
+      <path id="Path_39" data-name="Path 39" d="M109.217,34.877,90.174,27.185l-33.54,32.5L36.371,44.322l-7.687,3.844.1,40.613,7.687,3.844L56.734,77.258l33.54,32.479,19.042-7.7ZM38.392,77.062V59.86l9.509,8.6H48Zm49.863,5.722L69.148,68.461h-.1L88.266,54.138V82.784Z" transform="translate(0.571)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

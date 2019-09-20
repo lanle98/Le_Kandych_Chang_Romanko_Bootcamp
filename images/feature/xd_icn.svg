@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="138" height="138" viewBox="0 0 138 138">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_4" data-name="Ellipse 4" cx="69" cy="69" r="69" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="xd_icn" clip-path="url(#clip-path)">
+    <g id="experience">
+      <circle id="Ellipse_5" data-name="Ellipse 5" cx="69" cy="69" r="69" fill="rgba(106,106,106,0.4)"/>
+      <g id="Group_66" data-name="Group 66" transform="translate(23.854 40.78)">
+        <path id="Path_30" data-name="Path 30" d="M23.854,96.3,42.829,67.329,25.632,40.78h13.1L49.863,58.623,60.779,40.78H73.771L56.494,67.733,75.469,96.3h-13.5L49.648,77.113,37.3,96.3Z" transform="translate(-23.854 -40.78)" fill="#fff"/>
+        <path id="Path_31" data-name="Path 31" d="M114.146,96.3h-9.892V90.4a15.855,15.855,0,0,1-5.822,5.121,14.8,14.8,0,0,1-6.765,1.7,15.307,15.307,0,0,1-11.859-5.579q-4.932-5.579-4.932-15.579,0-10.229,4.8-15.552A15.624,15.624,0,0,1,91.829,55.2,15.039,15.039,0,0,1,103.5,60.806v-20h10.646V96.3ZM85.738,75.334c0,4.286.593,7.385,1.779,9.326a8.074,8.074,0,0,0,7.2,4.178,7.871,7.871,0,0,0,6.253-3.127c1.725-2.075,2.588-5.2,2.588-9.326,0-4.609-.836-7.951-2.507-9.973a8.188,8.188,0,0,0-12.722-.027C86.6,68.326,85.738,71.345,85.738,75.334Z" transform="translate(-23.854 -40.78)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
