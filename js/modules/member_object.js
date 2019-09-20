@@ -4,11 +4,11 @@ const Team = {
     popup: "lan_popup.jpg",
     name: "Lan Le",
     bio:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    linkedin: "https://www.facebook.com/lan.le.1998",
+      "Hi, my name is Lan. I'm from Vietnam which is a pretty nice and friendly country. I am passionate about designs, movies, music and recently codes. I want to be a Front-End Developer after I finish school at Fanshawe College. Check out my Instagram for more cool stuffs",
+    linkedin: "https://www.linkedin.com/",
     facebook: "https://www.facebook.com/lan.le.1998",
-    twitter: "https://www.facebook.com/lan.le.1998",
-    instagram: "https://www.facebook.com/lan.le.1998"
+    twitter: "https://twitter.com/?lang=en",
+    instagram: "https://www.instagram.com/lanle98/?hl=en"
   },
 
   Kayla: {
