@@ -70,14 +70,14 @@ header {
     .button {
       align-self: flex-start;
     }
-  // h3 {
-  //   font-size: 5vw;
-  //    margin: 60px 0 20px 0;
-  //    text-align: left;
+   h3 {
+    font-size: 8vw;
+    margin: 60px 0 20px 0;
+    text-align: left;
 
-  //  }
+   }
     p {
-      font-size: 10vw;
+      font-size: 6vw;
       margin: 0;
       margin-bottom: 20px;
       text-align: left;
@@ -87,6 +87,15 @@ header {
       display: none;
       position: absolute;
     }
+}
+.description{
+  h4{
+    font-size: $description;
+    font-weight: 400;
+  }
+  p{
+    padding: 5px 60px 40px 60px;
+   }
 }
 
 .social {
@@ -396,12 +405,28 @@ header {
     background: url(../images/bckgrd_Tablet.jpg);
     background-size: cover;
   }
+  header{
+    padding: 0 90px;
+  }
 
   .hero {
     justify-content: flex-start;
     h3 {
       margin: 0;
+      font-size: 7vh;
     }
+    p {
+      font-size: 6vh;
+    };
+  }
+
+  .description{
+    h4{
+      font-size: $description;
+    }
+     p{
+      padding: 5px 60px 40px 60px;
+     }
   }
 
   .social {
@@ -463,8 +488,11 @@ header {
   }
 
   .hero {
+    h3{
+      font-size: 6vw;
+    }
     p {
-      font-size: 3vw;
+      font-size: 4vw;
     }
 
     .workWithUs {
