@@ -1,4 +1,8 @@
 footer {
+  .logo {
+    width: 40vw;
+  }
+
   padding: 20px;
   h3,
   li {
@@ -37,4 +41,9 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  footer {
+    .logo {
+      width: 20vw;
+    }
+  }
 }
