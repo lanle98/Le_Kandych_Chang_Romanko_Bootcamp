@@ -59,6 +59,7 @@ header {
   max-width: 300px;
   align-self: center;
   min-width: 100px;
+  cursor: pointer;
 }
 
 .hero {
@@ -83,10 +84,11 @@ header {
       text-align: left;
     }
 
-    .scroll {
-      display: none;
-      position: absolute;
-    }
+
+  .scroll {
+    display: none;
+    position: absolute;
+  }
 }
 .description{
   h4{
@@ -159,6 +161,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
+  align-items: center;
 
   .member {
     margin: 40px 20px;
@@ -267,7 +270,8 @@ header {
 
 .blurry_background {
   display: none;
-  width: 99vw;
+  width: 95vw;
+  margin: 0 auto;
   height: 2000px;
   position: absolute;
   background: black;
@@ -303,10 +307,12 @@ header {
   }
 
   .project:nth-child(even) {
-    background: linear-gradient(rgba(81,8,77,0.2), rgba(40,15,97,0.3)), url('../images/tablet_portfolio_pic1.jpg') no-repeat center;
+    background: linear-gradient(rgba(81, 8, 77, 0.2), rgba(40, 15, 97, 0.3)),
+      url("../images/tablet_portfolio_pic1.jpg") no-repeat center;
   }
   .project:nth-child(odd) {
-    background: linear-gradient(rgba(81,8,77,0.2), rgba(40,15,97,0.3)), url('../images/tablet_portfolio_pic2.jpg') no-repeat center;
+    background: linear-gradient(rgba(81, 8, 77, 0.2), rgba(40, 15, 97, 0.3)),
+      url("../images/tablet_portfolio_pic2.jpg") no-repeat center;
   }
 }
 
@@ -331,7 +337,7 @@ header {
     padding: 10px 20px;
   }
 
-  form{
+  form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -388,10 +394,10 @@ header {
     width: 100px;
     height: 100px;
     margin: 20px auto;
-      img {
-        display: block;
-        width: 100%;
-      }
+    img {
+      display: block;
+      width: 100%;
+    }
   }
 
   .social {
@@ -468,10 +474,12 @@ header {
   }
   .portfolio {
     .project:nth-child(even) {
-      background: linear-gradient(rgba(81,8,77,0.2), rgba(40,15,97,0.3)), url('../images/desktop_portfolio_pic1.jpg') no-repeat center;
+      background: linear-gradient(rgba(81, 8, 77, 0.2), rgba(40, 15, 97, 0.3)),
+        url("../images/desktop_portfolio_pic1.jpg") no-repeat center;
     }
     .project:nth-child(odd) {
-      background: linear-gradient(rgba(81,8,77,0.2), rgba(40,15,97,0.3)), url('../images/desktop_portfolio_pic2.jpg') no-repeat center;
+      background: linear-gradient(rgba(81, 8, 77, 0.2), rgba(40, 15, 97, 0.3)),
+        url("../images/desktop_portfolio_pic2.jpg") no-repeat center;
     }
   }
 }
