@@ -327,11 +327,16 @@ header {
     display: flex;
     flex-direction: column;
     flex: 1;
+    justify-content: space-around;
+ 
+    
+    
   }
 
   input,
   textarea {
-    margin: 0px 40px 40px 0px;
+    margin: 0px 40px 40px 40px;
+   
     // width: 80vw;
     // height: 50px;
     border: solid 1px white;
@@ -431,6 +436,7 @@ header {
       height: 100%;
     }
   }
+  
 
   .videoOverlay {
     background: url(../images/video_overlay_large.jpg) no-repeat center center;
