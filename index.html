@@ -86,11 +86,11 @@
           <video src="video/bootcamp_video.mp4" muted></video>
           <!-- video controls -->
           <div id="videoControls">
-                <button type="button" id="playPause"><img src="images/play_button.svg" alt="Play svg icon"></button>
+                <div><img id="playPause" src="images/play_button.svg" alt="Play svg icon"></div>
                 <input type="range" id="timeBar" value="0">
-                <button type="button" id="mute"><img src="images/muted.svg" alt="Mute svg icon"></button>
+                <div><img id="mute" src="images/muted.svg" alt="Mute svg icon"></div>
                 <input type="range" id="volumeBar" min="0" max="1" step="0.1" value="0">
-                <button type="button" id="fullScreen"><img src="images/expand.svg" alt="Expended svg icon"></button>
+                <div><img id="fullScreen" src="images/expand.svg" alt="Expended svg icon"></div>
           </div>
         </div>
         </div>
@@ -121,7 +121,7 @@
       <section class="portfolio Portfolio">
         <h3>Portfolio</h3>
         <div class="projects">
-          <div class="project"></div>
+          <div class="project"><a href="feature.html">Couples Resort</a></div>
           <div class="project"></div>
           <div class="project"></div>
           <div class="project"></div>
@@ -145,7 +145,7 @@
 
             <section class="submission">
                 <div class="thankYou">
-                  <img src="images/submission/thank-you_icon.svg" alt="thank-you_icon" width="100%">
+                  <img src="images/submission/thank-you_icon.svg" alt="thank-you_icon">
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In voluptatem totam molestiae a unde? </p>
                 <div class="button back">Back to page</div>
@@ -159,13 +159,13 @@
               </section>
 
           <form>
-            <input placeholder="First Name" /><br />
-            <input placeholder="Last Name" /><br />
-            <input placeholder="Phone" /><br />
-            <input placeholder="Email" /><br />
-            <div id="Message">
-              <textarea name="comments" placeholder="Message"></textarea>
+            <div class="formColumn">
+              <input placeholder="First Name" />
+              <input placeholder="Last Name" />
+              <input placeholder="Phone" />
+              <input placeholder="Email" />
             </div>
+            <textarea name="comments" placeholder="Message"></textarea>
             
           </form>
           <div class="send button">Send</div>

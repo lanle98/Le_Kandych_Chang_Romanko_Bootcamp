@@ -1,21 +1,23 @@
 #videoControls {
   display: flex;
+  position: absolute;
+  align-self: flex-end;
   width: 100%;
-  background: purple;
-  justify-content: space-between;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+  justify-content: space-around;
   flex-wrap: wrap;
-   #playPause, #fullScreen, #mute  {
-  width: 20%;
-   background-color: purple;
-   img {
-     width: 30%;
-    //  margin-left: 60px;
+  border-radius: 0px 0px 20px 20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  padding-bottom: 10px;
     
-   }
+    #playPause, #fullScreen, #mute  {
+      height: 35px;
+    }  
   }
 
-  
-    
+  .video:hover > #videoControls {
+    opacity: 1;
   }
   
 
