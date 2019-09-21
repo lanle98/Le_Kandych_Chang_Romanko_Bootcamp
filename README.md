@@ -1,5 +1,3 @@
-<p align="center"><img src="images/logo_v2.svg" width="20%">
-
 # Digital Lights
 ## We Create Sparks in the Community
 
