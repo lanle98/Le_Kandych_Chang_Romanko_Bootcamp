@@ -38,7 +38,7 @@ const Team = {
   Vira: {
     avatar: "vira",
     popup: "vira_popup.jpg",
-    name: "Vira",
+    name: "Vira Romanko",
     bio:
       "Vira Romanko is a junior front-end developer with design passion. She believes that great design is practical and oriented on the end-user. As a project manager of Digital Lights, she is responsible for breaking down big tasks into small ones and ensure that our customers are satisfied with the end deliverables. The end result motives her as much as the process of creating and working in the awesome team. If you have any questions or concerns please feel free to contact her",
     //sorry dont have linedIn account but i should ha ha
