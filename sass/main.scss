@@ -114,12 +114,15 @@ header {
 .social {
   margin: 20px 0;
   display: flex;
-
   img {
     width: 40px;
     height: 40px;
     margin-right: 20px;
+    transition: all 0.3s ease;
     opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -223,6 +226,7 @@ header {
     width: 40px;
     height: 40px;
     opacity: 0.8;
+    transition: all 0.3s ease;
   }
 
   .member-social img:hover {
@@ -624,11 +628,6 @@ header {
 
     .videoOverlay {
       background: url(../images/video_overlay_small.jpg) no-repeat center center;
-    }
-  }
-
-  .ourTeam {
-    .member {
     }
   }
 

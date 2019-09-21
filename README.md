@@ -1,8 +1,10 @@
+<p align="center"><img src="images/logo_v2.svg" width="20%">
+
 # Digital Lights
-## We are sparking community
+## We Create Sparks in the Community
 
 
-DIGITAL LIGHTS is a startup digital agency that brings together small local businesses, helps to promote them. Our team knows how to implement clean UX/UI, lots of white-space, fresh and bright colors to bring it all together for our clients to enjoy the end deliverable. We are proud of our team of well-experienced Developer, Designer, Motion Designer, and Project Manager. Visit our website for more information. 
+We are a group of passionate creatives who are committed to bringing a special shine to all of our work. As a full-service advertising agency, we target local businesses and organizations to highlight their brand, products, and services to solve problems and spark innovation. We believe that big or small, each creative solution will collectively form a bigger, brighter community.
 
 
 ## Build with
@@ -14,7 +16,6 @@ DIGITAL LIGHTS is a startup digital agency that brings together small local busi
 
 Our website is live oh Heroku hosting service at
 https://idpbootcamp.herokuapp.com/index.html
-
 
 
 ## Workspace (development)
@@ -34,9 +35,12 @@ https://idpbootcamp.herokuapp.com/index.html
 * **Julia Kandych** - *Designer* 
 * **Kayla Chang** - *Motion Designer* 
 
-
-
-## Acknowledgment/reference sources
+## Acknowledgment/References
 
 * **Pinterest/Dribbble/Google** - *Design inspiration* 
 
+## Future Plans
+- [ ] Optimize JS and Sass Code
+- [ ] Add "What We Do", "Stats", and "Testimonials" sections
+- [ ] Make nav sticky
+- [ ] Refine pop-up window lightboxes 
