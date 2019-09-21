@@ -19,6 +19,24 @@
   li {
     padding: 20px;
     list-style-type: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    &:hover {
+      background: #fff;
+      color: #280d61;
+      a {
+        color: #280d61;
+      }
+    }
+    &:active {
+      opacity: 1;
+      background: #fff;
+      color: #280d61;
+      a {
+        color: #280d61;
+      }
+    }
   }
 }
 
