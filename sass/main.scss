@@ -36,9 +36,7 @@ header {
   min-height: 800px;
 }
 .logo {
-  width: 20vw;
-  height: 8.5vw;
-  // margin: 20px 0;
+  height: 70px;
 }
 
 .btnCon {
@@ -142,6 +140,7 @@ header {
   cursor: pointer;
   border-radius: 20px;
   border: 1px solid white;
+  align-items: flex-end;
 
   video {
     width: 100%;
